@@ -1,0 +1,89 @@
+
+.action-jumpNext { /* stylelint-disable-line selector-class-pattern */
+    display: none;
+}
+
+
+/* section */ .top-section {
+    display: flex;
+    padding-top: 1.25rem;
+
+    &:last-child {
+        margin-bottom: 1.5rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+}
+
+
+@media (below-width($breakpoint-tablet)) {
+    .top-section {
+        .container {
+            padding: 0 1rem;
+        }
+
+        .sub-container {
+            max-width: $breakpoint-tablet * 0.68;
+        }
+    }
+}
+
+
+@media (above-width($breakpoint-tablet)) {
+    .top-section {
+        .container {
+            padding: 0 6.375rem;
+        }
+
+        &:last-child {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+@media (below-width($breakpoint-desktop)) {
+    body {
+        padding-top: $top-header-height-small;
+    }
+}
+
+
+@media (above-width($breakpoint-desktop)) {
+    .top-section {
+        .sub-container {
+            max-width: $breakpoint-desktop * 0.8;
+        }
+    }
+}
+
+
+@media (above-width($breakpoint-desktop)) and (min-aspect-ratio: 4/3) {
+    #main-content {
+        height: 100%;
+    }
+
+    .top-section {
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .container {
+            padding-bottom: 5rem;
+        }
+    }
+
+    .action-jumpNext { /* stylelint-disable-line selector-class-pattern */
+        display: block;
+        margin-top: 1.75rem;
+        text-align: center;
+    }
+}

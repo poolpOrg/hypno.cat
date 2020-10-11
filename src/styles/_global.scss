@@ -1,0 +1,127 @@
+$base-line-height: 1.5;
+
+body,
+html {
+    height: 100%;
+}
+
+
+html {
+    line-height: $base-line-height;
+    scroll-behavior: smooth;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+}
+
+
+body {
+    background-color: $clr-bground-base;
+    color: $clr-text-base;
+    font-display: fallback;
+    font-family: $font-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+a {
+    color: $clr-link-base;
+    transition: all 0.2s;
+
+    // state order is important
+    &:link {
+        text-decoration: none;
+    }
+
+    &:not([href^="#"]):visited {
+        color: darken($clr-link-base, 10%);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: darken($clr-link-base, 5%);
+    }
+
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+
+em {
+    font-weight: bolder;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-sans-serif;
+    line-height: 1.2;
+}
+
+
+section h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Caring for accessibility : visually impaired people may rely on text
+// to speech to browse the page; use `..sr-friendly` so that the element
+// will be considered by text to speech
+// https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+.sr-friendly {
+    // clip: rect(1px 1px 1px 1px); // IE6, IE7
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+
+    // allow some element to appear on focus, like skip to content link
+    &.focus-reveal:focus {
+        clip: auto;
+        height: auto;
+        width: auto;
+    }
+}
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Removing margin, padding and bullets from lists (usually ul / ol)
+.naked-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+.notice {
+    color: $clr-notice;
+}

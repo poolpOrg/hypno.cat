@@ -1,0 +1,41 @@
+// Breakpoint management
+//
+// Using easier to understand naming scheme; remember that functions
+// allows composition, while mixins do not.
+//
+// Note: 'above' means above and including breakpoint, whereas 'below'
+// mean strictly below given breakpoint.
+@function above-height($breakpoint) {
+    @return "min-height: #{$breakpoint}";
+}
+
+@function above-width($breakpoint) {
+    @return "min-width: #{$breakpoint}";
+}
+
+@function below-height($breakpoint) {
+    @return "max-height: #{$breakpoint - 1px}";
+}
+@function below-width($breakpoint) {
+    @return "max-width: #{$breakpoint - 1px}";
+}
+
+
+// Box-shadow
+//
+// A more explicit box-shadow declaration
+// relies on named parameters and default values
+@mixin box-shadow(
+    $inset: false,
+    $offset-x: 0,
+    $offset-y: 0,
+    $blur-radius: 0,
+    $spread-radius: 0,
+    $color: #000
+) {
+    $params: $offset-x $offset-y $blur-radius $spread-radius $color;
+    @if $inset {
+        $params: inset $params;
+    }
+    box-shadow: $params;
+}

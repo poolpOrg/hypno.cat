@@ -1,0 +1,65 @@
+//  1. Reset unusual Firefox-on-Android default style;
+// see https://github.com/necolas/normalize.css/issues/214
+// see https://github.com/necolas/normalize.css/issues/214#issuecomment-23437434
+// see https://bugzilla.mozilla.org/show_bug.cgi?id=763671#c78
+.btn {
+    background-image: none; // 1
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    // `touch-action: manipulation` allows panning and pinch zoom gestures, but
+    // disables additional non-standard gestures such as double-tap to zoom
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &:active {
+        background-image: none;
+        outline: 0;
+    }
+
+    &[aria-disabled="true"],
+    &[disabled],
+    fieldset[disabled] & { // stylelint-disable-line selector-no-qualifying-type
+        cursor: not-allowed;
+    }
+
+    @at-root a.btn {
+        text-decoration: none;
+    }
+}
+
+
+.btn {
+    font-family: $font-sans-serif;
+}
+
+
+.btn-secondary {
+    background-color: $clr-gray-100;
+    color: $clr-text-base;
+
+    &:hover {
+        background-color: darken($clr-gray-100, 5%);
+    }
+}
+
+
+.btn-primary {
+    background-color: $clr-primary;
+    color: $clr-white;
+
+    &:hover {
+        background-color: darken($clr-primary, 5%);
+    }
+}
+
+
+.btn-xl {
+    border-radius: 300px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}

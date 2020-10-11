@@ -1,0 +1,233 @@
+// top header : the fixed navigation bar at the top of the page
+
+$outer-hrz-padding: 0.75rem;
+$outer-vrt-padding: 0.5rem;
+
+$title-font-size: 1.25rem;
+$title-line-height: 1.2;
+$title-total-height: $title-font-size * $title-line-height;
+
+$link-font-size: 0.9rem;
+$link-line-height: $base-line-height;
+$link-vrt-padding: 0.5rem;
+$link-total-height: ($link-font-size * $link-line-height) + 2 * $link-vrt-padding;
+
+
+// Small header : ToC links are hidden in a foldable menu, title label
+// is assumed to be the tallest element of the container
+$top-header-height-small: (2 *$outer-vrt-padding) + $title-total-height;
+
+// for wider displays, both title and toC links are visible
+$top-header-height: (2 *$outer-vrt-padding) + max($title-total-height, $link-total-height);
+
+
+#top-header {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.2s ease-out;
+
+    .container {
+        margin: 0 auto;
+        padding: $outer-vrt-padding $outer-hrz-padding;
+    }
+}
+
+
+#top-header {
+    .container {
+        // setup a new position context
+        position: relative;
+    }
+
+    [aria-controls="main-nav"] {
+        $btn-height: 2rem;
+
+        height: $btn-height;
+        position: absolute;
+        right: $outer-hrz-padding;
+        top: max(0, $top-header-height-small - $btn-height)/2;
+    }
+}
+
+
+#top-header {
+    @include box-shadow(
+        $offset-y: -2px,
+        $blur-radius: 6px,
+        $color: $clr-gray-700
+    );
+
+    background-color: $clr-bground-base;
+    border: 0;
+    // border-bottom: 1px solid $clr-gray-300;
+    font-family: $font-sans-serif;
+
+    .sr-friendly.focus-reveal:focus {
+        background-color: $clr-bground-base;
+        z-index: 1;
+    }
+}
+
+
+#top-header .main-brand {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+    text-transform: uppercase;
+}
+
+
+[aria-controls="main-nav"] {
+    background-color: $clr-bground-base;
+    border: 1px solid $clr-gray-500;
+    border-radius: 0.25rem;
+    padding: 0 0.75rem;
+
+    &[aria-expanded="true"] {
+        background-color: darken($clr-bground-base, 5%);
+    }
+
+    .icon-bars {
+        $icon-size: 20px; // 20px = 1.25rem
+
+        @include svg-icon(bars, $icon-size);
+
+        height: $icon-size;
+        width: $icon-size;
+    }
+}
+
+
+#top-header nav {
+    $inner-hrz-padding: $outer-hrz-padding / 2;
+
+    // reset outer padding on navigation link group
+    margin-left: -1 * $inner-hrz-padding;
+    margin-right: -1 * $inner-hrz-padding;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        color: $clr-text-base;
+
+        &:hover, &:active, &:focus {
+            color: $clr-link-base;
+            text-decoration: none;
+        }
+    }
+
+    // currently active section, typically detected by scroll spy script
+    .active a {
+        color: $clr-link-base;
+    }
+
+    .nav-option {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .nav-group.sections .nav-option {
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 0.5rem $inner-hrz-padding;
+    }
+
+    .nav-group.l10n .nav-option {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.6rem $inner-hrz-padding 0.5rem;
+    }
+
+    .nav-group.l10n .active .nav-option {
+        font-weight: 500; // just text
+    }
+}
+
+
+#main-nav .nav-group + .nav-group {
+    position: relative;
+
+    &::before {
+        background-color: $clr-gray-400;
+        content: "";
+        display: block;
+        position: absolute;
+    }
+}
+
+
+@media (below-width($breakpoint-desktop)) {
+    // below desktop width : use a foldable element to store the top navigation
+
+    [aria-controls="main-nav"][aria-expanded="false"] ~ #main-nav {
+        display: none;
+    }
+
+    #main-nav .nav-group + .nav-group {
+        $margin-top: 0.8rem;
+        margin-top: $margin-top;
+
+        &::before {
+            height: 2px;
+            left: 0;
+            top: -($margin-top / 2);
+            width: 2rem;
+        }
+    }
+}
+
+
+@media (above-width($breakpoint-desktop)) {
+    // desktop and bigger width : since top navigation is always displayed
+    // foldable toggle button should be hidden
+
+    /* .foldable-toggle */ [aria-controls="main-nav"] {
+        display: none;
+    }
+
+    #top-header .container {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1136px;
+    }
+
+    #top-header nav ul {
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    #main-nav {
+        display: flex;
+    }
+
+    #main-nav .nav-group + .nav-group {
+        $margin-left: 0.8rem;
+        margin-left: $margin-left;
+
+        &::before {
+            height: 1.5rem;
+            left: -($margin-left / 2);
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 2px;
+        }
+    }
+}
+
+
+@media (above-width($breakpoint-desktop)) and (min-aspect-ratio: 4/3) {
+    #top-header {
+        // hide top header
+        top: -1 * $top-header-height;
+    }
+
+    /* body */ .v-scrolled #top-header {
+        // show top header
+        top: 0;
+    }
+}

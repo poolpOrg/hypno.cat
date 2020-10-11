@@ -1,0 +1,39 @@
+#bottom-image {
+    background-image: url("../img/hypnocat.png");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    background-size: contain;
+
+    bottom: 0.5rem;
+    height: 150px;
+    left: 0.5rem;
+    pointer-events: none;
+    position: fixed;
+    width: 150px;
+}
+
+
+#bottom-image {
+    display: none;
+}
+
+
+@media (above-width($breakpoint-desktop)) and (min-aspect-ratio: 4/3) {
+    #bottom-image {
+        display: block;
+        opacity: 0;
+        transition: all 0.2s ease-out;
+        z-index: -1; // stay below map iframe
+    }
+
+    .below-fold #bottom-image {
+        opacity: 0.15;
+    }
+}
+
+
+@media (above-width($breakpoint-desktop-hd)) {
+    .below-fold #bottom-image {
+        opacity: 0.25;
+    }
+}

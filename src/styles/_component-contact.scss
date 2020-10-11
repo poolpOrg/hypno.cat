@@ -1,0 +1,92 @@
+.embedded-map {
+    width: 100%;
+}
+
+
+.contact {
+    $icon-size: 24px;
+
+    align-items: center;
+    display: flex;
+
+    .icon {
+        align-self: flex-end;
+        height: $icon-size;
+        margin-right: 0.5rem;
+        width: $icon-size;
+    }
+
+    .icon-phone {
+        @include svg-icon(phone, $icon-size);
+    }
+
+    .icon-mail {
+        @include svg-icon(mail, $icon-size);
+    }
+}
+
+
+.action-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .contact {
+        min-width: 168px;
+    }
+
+    .contact + .contact {
+        margin-top: 0.75rem;
+    }
+}
+
+
+@media (below-width($breakpoint-tablet)) {
+    // on smaller viewport, hide thumbnails and use textual labels
+
+    .gallery {
+        .gallery-entry + .gallery-entry::before {
+            content: " - ";
+        }
+
+        a::after {
+            // each `a` should sport an `aria-label` attribute
+            content: attr(aria-label);
+        }
+
+        .thumbnail {
+            display: none;
+        }
+    }
+}
+
+
+@media (above-width($breakpoint-tablet)) {
+    .action-contact {
+        flex-direction: row;
+    }
+
+    .action-contact .contact + .contact {
+        margin-top: 0;
+    }
+}
+
+
+@media (above-width($breakpoint-desktop)) {
+    .contact {
+        $icon-size: 32px;
+
+        .icon {
+            height: $icon-size;
+            width: $icon-size;
+        }
+
+        .icon-phone {
+            @include svg-icon(phone, $icon-size);
+        }
+
+        .icon-mail {
+            @include svg-icon(mail, $icon-size);
+        }
+    }
+}
