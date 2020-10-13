@@ -5,7 +5,7 @@
     ...
     $ npm run build
     ...
-    $ cp www path/to/www
+    $ cp docs path/to/docs
 
 
 ## Content quick description
