@@ -159,13 +159,13 @@ gulp.task("build", (done) => {
 
 gulp.task("deploy_scripts", () => {
     return gulp.src([ "build/**/*.js" ], { base: "build" })
-        .pipe(gulp.dest("www"))
+        .pipe(gulp.dest("docs"))
     ;
 });
 
 gulp.task("deploy_styles", () => {
     return gulp.src([ "build/**/*.css" ], { base: "build" })
-        .pipe(gulp.dest("www"))
+        .pipe(gulp.dest("docs"))
     ;
 });
 
