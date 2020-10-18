@@ -270,7 +270,7 @@ section h2 {
   [aria-controls="main-nav"][aria-expanded="true"] {
     background-color: #f2f2f2; }
   [aria-controls="main-nav"] .icon-bars {
-    background: url("../img/icons_sheet.svg") 0px 0 / 60px 20px no-repeat;
+    background: url("../img/icons_sheet.svg") 0px 0 / 64.28571px 20px no-repeat;
     height: 20px;
     width: 20px; }
 
@@ -379,9 +379,9 @@ section h2 {
     margin-right: 0.5rem;
     width: 24px; }
   .contact .icon-phone {
-    background: url("../img/icons_sheet.svg") -48px 0 / 72px 24px no-repeat; }
+    background: url("../img/icons_sheet.svg") -51.42857px 0 / 77.14286px 24px no-repeat; }
   .contact .icon-mail {
-    background: url("../img/icons_sheet.svg") -24px 0 / 72px 24px no-repeat; }
+    background: url("../img/icons_sheet.svg") -25.71429px 0 / 77.14286px 24px no-repeat; }
 
 .action-contact {
   display: flex;
@@ -411,9 +411,9 @@ section h2 {
     height: 32px;
     width: 32px; }
   .contact .icon-phone {
-    background: url("../img/icons_sheet.svg") -64px 0 / 96px 32px no-repeat; }
+    background: url("../img/icons_sheet.svg") -68.57143px 0 / 102.85714px 32px no-repeat; }
   .contact .icon-mail {
-    background: url("../img/icons_sheet.svg") -32px 0 / 96px 32px no-repeat; } }
+    background: url("../img/icons_sheet.svg") -34.28571px 0 / 102.85714px 32px no-repeat; } }
 
 #bottom-image {
   background-image: url("../img/hypnocat.png");
