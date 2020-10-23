@@ -15,6 +15,32 @@
   <link rel="stylesheet" type="text/css" href="css/home.min.css" />
 </head>
 <body id="page-top">
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="104290691428680"
+  theme_color="#f05f40"
+  logged_in_greeting="Bonjour, n'hésitez pas à me poser vos questions !"
+  logged_out_greeting="Bonjour, n'hésitez pas à me poser vos questions !">
+      </div>
 
   <header id="top-header">
     <div class="container">
@@ -54,7 +80,7 @@
               <li><a lang="fr" hreflang="fr" class="nav-option" href="">Français</a></li>
               -->
               <li class="active"><span class="nav-option">Français</span></li>
-              <li><a lang="ca" hreflang="ca" class="nav-option" href="index.en.html">English</a></li>
+              <li><a lang="en" hreflang="en" class="nav-option" href="index.en.html">English</a></li>
               <li><a lang="ca" hreflang="ca" class="nav-option" href="index.ca.html">Català</a></li>
             </ul>
           </div>
@@ -85,7 +111,7 @@
 
           <p class="text-justify">
             L'hypnose est un état <em>naturellement</em> accessible à <em>TOUS</em> et que l'on peut <em>déclencher par la technique</em> chez un sujet <em>volontaire</em>.
-            Le subconscient prends alors davantage de place et peut s'exprimer plus librement,
+            Le subconscient prend alors davantage de place et peut s'exprimer plus librement,
             que ce soit dans un cadre ludique ou thérapeutique.
             L'hypnose ouvre un <em>canal de communication</em> avec le subconscient,
             permettant de l'interroger,
@@ -324,7 +350,7 @@
             merci de prévenir <em>au moins 48 heures</em> avant notre rendez-vous afin que je puisse réaffecter le créneau à une autre personne.
             Dans le cas contraire,
             je ne considèrerai pas la séance comme dûe,
-            mais je refuserai de vous recevoir à l'avenir si l'annulation n'est pas justifiée.            
+            mais je refuserai de vous recevoir à l'avenir si l'annulation n'est pas justifiée.
           </p>
 
           <div class="action-contact">
@@ -370,7 +396,7 @@
               <li>2015 - Autodidacte</li>
               <li>2016 - Technicien en Hypnose Ericksonienne, <i>Psynapse</i></li>
               <li>2016 - Certification de compétence "Street Hypnose", <i>Street-Hypnose</i></li>
-              <li>2016 - <a href="img/photos/psynapse.pdf" target="_blank">Praticien en Hypnose Ericksonienne, <i>Psynapse</i></a></li>
+              <li>2016 - <a href="psynapse_fr.pdf" target="_blank">Praticien en Hypnose Ericksonienne, <i>Psynapse</i></a></li>
               <li>2017 - Certification de compétence "Hypnose Générale", <i>Street-Hypnose</i></li>
               <li>2017 - Hypnose et douleurs, <i>Hunkaar</i></li>
               <li>2018 - Hypnose expérimentale, <i>Street-Hypnose</i></li>
@@ -411,7 +437,6 @@
             </p>
             <p class="text-left">
               <small>
-                <br /><em>Domiciliation:</em> hypno.cat chez Gilles CHEHADE, 30 Boulevard de l'estuaire, 44200 Nantes
                 <br /><em>SIRET:</em> 515 053 908 00031
                 <br /><em>Assurance Medinat:</em> MDNA25679
               </small>
