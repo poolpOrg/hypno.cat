@@ -37,29 +37,43 @@
 }
 
 
-.btn-secondary {
-    background-color: $clr-gray-100;
-    color: $clr-text-base;
+.btn-xl {
+    border-radius: 300px;
+    font-weight: 700;
+    outline: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
 
-    &:hover {
-        background-color: darken($clr-gray-100, 5%);
+    &:focus {
+        @include box-shadow(
+            $spread-radius: 4px,
+            $color: $clr-gray-800
+        );
     }
 }
 
 
 .btn-primary {
-    background-color: $clr-primary;
-    color: $clr-white;
+    $btn-bground-color: $clr-primary;
+    $btn-text-color: $clr-white;
+
+    background-color: $btn-bground-color;
+    color: $btn-text-color;
 
     &:hover {
-        background-color: darken($clr-primary, 5%);
+        background-color: darken($btn-bground-color, 5%);
     }
 }
 
 
-.btn-xl {
-    border-radius: 300px;
-    font-weight: 700;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
+.btn-secondary {
+    $btn-bground-color: $clr-gray-100;
+    $btn-text-color: $clr-text-base;
+
+    background-color: $btn-bground-color;
+    color: $btn-text-color;
+
+    &:hover {
+        background-color: darken($btn-bground-color, 5%);
+    }
 }
