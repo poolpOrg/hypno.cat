@@ -49,10 +49,6 @@
     // on smaller viewport, hide thumbnails and use textual labels
 
     .gallery {
-        .gallery-entry + .gallery-entry::before {
-            content: " - ";
-        }
-
         a::after {
             // each `a` should sport an `aria-label` attribute
             content: attr(aria-label);
@@ -62,10 +58,28 @@
             display: none;
         }
     }
+
+    .gallery-entry + .gallery-entry::before {
+        content: " - ";
+    }
 }
 
 
 @media (above-width($breakpoint-tablet)) {
+    .gallery {
+        // force gallery to be displayed in a single row
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .gallery-entry {
+        flex: 0 1 30%; // 30% width cause there's 3 images
+
+        img {
+            width: 100%; // force images to consider its parent width
+        }
+    }
+
     .action-contact {
         flex-direction: row;
     }
