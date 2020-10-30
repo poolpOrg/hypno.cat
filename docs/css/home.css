@@ -204,11 +204,14 @@ section h2 {
 .btn {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; }
 
-.btn-secondary {
-  background-color: #f8f9fa;
-  color: #212529; }
-  .btn-secondary:hover {
-    background-color: #e9ecef; }
+.btn-xl {
+  border-radius: 300px;
+  font-weight: 700;
+  outline: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase; }
+  .btn-xl:focus {
+    box-shadow: 0 0 0 4px #343a40; }
 
 .btn-primary {
   background-color: #f05f40;
@@ -216,11 +219,11 @@ section h2 {
   .btn-primary:hover {
     background-color: #ee4b28; }
 
-.btn-xl {
-  border-radius: 300px;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  text-transform: uppercase; }
+.btn-secondary {
+  background-color: #f8f9fa;
+  color: #212529; }
+  .btn-secondary:hover {
+    background-color: #e9ecef; }
 
 .hz-separator {
   border: 0;
