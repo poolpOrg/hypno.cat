@@ -1,0 +1,14 @@
+.mugshot {
+    float: left;
+    margin-right: 2.25rem;
+
+    img {
+        border: 1px solid $clr-primary;
+    }
+}
+
+@media (below-width($breakpoint-tablet)) {
+    .mugshot {
+        display: none;
+    }
+}
