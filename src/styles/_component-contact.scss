@@ -45,6 +45,16 @@
 }
 
 
+.gallery-entry a:focus img {
+    @include box-shadow(
+        $blur-radius: 6px,
+        $color: $clr-gray-800
+    );
+
+    border: 1px solid $clr-primary;
+}
+
+
 @media (below-width($breakpoint-tablet)) {
     // on smaller viewport, hide thumbnails and use textual labels
 
