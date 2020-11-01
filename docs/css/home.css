@@ -255,6 +255,9 @@ section h2 {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; }
   #top-header .sr-friendly.focus-reveal:focus {
     background-color: #fff;
+    left: 0;
+    padding: 0.25rem 1rem;
+    top: 2.5rem;
     z-index: 1; }
 
 #top-header .main-brand {
@@ -348,7 +351,9 @@ section h2 {
     top: -3.35rem; }
   /* body */
   .v-scrolled #top-header {
-    top: 0; } }
+    top: 0; }
+  #top-header .sr-friendly.focus-reveal:focus {
+    top: 3.35rem; } }
 
 #hero {
   background-image: url("../img/hypnocat.png"), url("../img/paper-texture.jpg");
