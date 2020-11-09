@@ -1,3 +1,7 @@
+.location {
+    margin: 1rem 0;
+}
+
 .embedded-map {
     width: 100%;
 }
@@ -41,14 +45,20 @@
 }
 
 
+.gallery-entry a:focus img {
+    @include box-shadow(
+        $blur-radius: 6px,
+        $color: $clr-gray-800
+    );
+
+    border: 1px solid $clr-primary;
+}
+
+
 @media (below-width($breakpoint-tablet)) {
     // on smaller viewport, hide thumbnails and use textual labels
 
     .gallery {
-        .gallery-entry + .gallery-entry::before {
-            content: " - ";
-        }
-
         a::after {
             // each `a` should sport an `aria-label` attribute
             content: attr(aria-label);
@@ -58,10 +68,28 @@
             display: none;
         }
     }
+
+    .gallery-entry + .gallery-entry::before {
+        content: " - ";
+    }
 }
 
 
 @media (above-width($breakpoint-tablet)) {
+    .gallery {
+        // force gallery to be displayed in a single row
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .gallery-entry {
+        flex: 0 1 30%; // 30% width cause there's 3 images
+
+        img {
+            width: 100%; // force images to consider its parent width
+        }
+    }
+
     .action-contact {
         flex-direction: row;
     }

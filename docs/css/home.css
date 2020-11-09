@@ -143,6 +143,12 @@ h6 {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.2; }
 
+ul {
+  padding-left: 1.5rem; }
+  @media (min-width: 640px) {
+    ul {
+      list-style-position: inside; } }
+
 section h2 {
   font-size: 2rem;
   font-weight: 500; }
@@ -370,6 +376,9 @@ section h2 {
       /* stylelint-disable-line selector-class-pattern */
       flex: 0 0 10%; } }
 
+.location {
+  margin: 1rem 0; }
+
 .embedded-map {
   width: 100%; }
 
@@ -395,15 +404,26 @@ section h2 {
   .action-contact .contact + .contact {
     margin-top: 0.75rem; }
 
+.gallery-entry a:focus img {
+  box-shadow: 0 0 6px 0 #343a40;
+  border: 1px solid #f05f40; }
+
 @media (max-width: 639px) {
-  .gallery .gallery-entry + .gallery-entry::before {
-    content: " - "; }
   .gallery a::after {
     content: attr(aria-label); }
   .gallery .thumbnail {
-    display: none; } }
+    display: none; }
+  .gallery-entry + .gallery-entry::before {
+    content: " - "; } }
 
 @media (min-width: 640px) {
+  .gallery {
+    display: flex;
+    justify-content: space-around; }
+  .gallery-entry {
+    flex: 0 1 30%; }
+    .gallery-entry img {
+      width: 100%; }
   .action-contact {
     flex-direction: row; }
   .action-contact .contact + .contact {
@@ -417,6 +437,17 @@ section h2 {
     background: url("../img/icons_sheet.svg") -68.57143px 0 / 102.85714px 32px no-repeat; }
   .contact .icon-mail {
     background: url("../img/icons_sheet.svg") -34.28571px 0 / 102.85714px 32px no-repeat; } }
+
+.mugshot {
+  float: left;
+  margin-bottom: 1rem;
+  margin-right: 1.75rem; }
+  .mugshot img {
+    border: 1px solid #f05f40; }
+
+@media (max-width: 639px) {
+  .mugshot {
+    display: none; } }
 
 #bottom-image {
   background-image: url("../img/hypnocat.png");
