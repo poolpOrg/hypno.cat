@@ -143,6 +143,12 @@ h6 {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.2; }
 
+ul {
+  padding-left: 1.5rem; }
+  @media (min-width: 640px) {
+    ul {
+      list-style-position: inside; } }
+
 section h2 {
   font-size: 2rem;
   font-weight: 500; }
@@ -204,11 +210,14 @@ section h2 {
 .btn {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; }
 
-.btn-secondary {
-  background-color: #f8f9fa;
-  color: #212529; }
-  .btn-secondary:hover {
-    background-color: #e9ecef; }
+.btn-xl {
+  border-radius: 300px;
+  font-weight: 700;
+  outline: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase; }
+  .btn-xl:focus {
+    box-shadow: 0 0 0 4px #343a40; }
 
 .btn-primary {
   background-color: #f05f40;
@@ -216,11 +225,11 @@ section h2 {
   .btn-primary:hover {
     background-color: #ee4b28; }
 
-.btn-xl {
-  border-radius: 300px;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  text-transform: uppercase; }
+.btn-secondary {
+  background-color: #f8f9fa;
+  color: #212529; }
+  .btn-secondary:hover {
+    background-color: #e9ecef; }
 
 .hz-separator {
   border: 0;
@@ -255,6 +264,9 @@ section h2 {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; }
   #top-header .sr-friendly.focus-reveal:focus {
     background-color: #fff;
+    left: 0;
+    padding: 0.25rem 1rem;
+    top: 2.5rem;
     z-index: 1; }
 
 #top-header .main-brand {
@@ -348,7 +360,9 @@ section h2 {
     top: -3.35rem; }
   /* body */
   .v-scrolled #top-header {
-    top: 0; } }
+    top: 0; }
+  #top-header .sr-friendly.focus-reveal:focus {
+    top: 3.35rem; } }
 
 #hero {
   background-image: url("../img/hypnocat.png"), url("../img/paper-texture.jpg");
@@ -366,6 +380,9 @@ section h2 {
     #hero .action-jumpNext {
       /* stylelint-disable-line selector-class-pattern */
       flex: 0 0 10%; } }
+
+.location {
+  margin: 1rem 0; }
 
 .embedded-map {
   width: 100%; }
@@ -392,15 +409,26 @@ section h2 {
   .action-contact .contact + .contact {
     margin-top: 0.75rem; }
 
+.gallery-entry a:focus img {
+  box-shadow: 0 0 6px 0 #343a40;
+  border: 1px solid #f05f40; }
+
 @media (max-width: 639px) {
-  .gallery .gallery-entry + .gallery-entry::before {
-    content: " - "; }
   .gallery a::after {
     content: attr(aria-label); }
   .gallery .thumbnail {
-    display: none; } }
+    display: none; }
+  .gallery-entry + .gallery-entry::before {
+    content: " - "; } }
 
 @media (min-width: 640px) {
+  .gallery {
+    display: flex;
+    justify-content: space-around; }
+  .gallery-entry {
+    flex: 0 1 30%; }
+    .gallery-entry img {
+      width: 100%; }
   .action-contact {
     flex-direction: row; }
   .action-contact .contact + .contact {
@@ -414,6 +442,17 @@ section h2 {
     background: url("../img/icons_sheet.svg") -68.57143px 0 / 102.85714px 32px no-repeat; }
   .contact .icon-mail {
     background: url("../img/icons_sheet.svg") -34.28571px 0 / 102.85714px 32px no-repeat; } }
+
+.mugshot {
+  float: left;
+  margin-bottom: 1rem;
+  margin-right: 1.75rem; }
+  .mugshot img {
+    border: 1px solid #f05f40; }
+
+@media (max-width: 639px) {
+  .mugshot {
+    display: none; } }
 
 #bottom-image {
   background-image: url("../img/hypnocat.png");

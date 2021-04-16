@@ -70,6 +70,15 @@ h6 {
 }
 
 
+ul {
+    padding-left: 1.5rem;
+
+    @media (above-width($breakpoint-tablet)) {
+        list-style-position: inside;
+    }
+}
+
+
 section h2 {
     font-size: 2rem;
     font-weight: 500;

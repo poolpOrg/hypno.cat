@@ -52,6 +52,15 @@ $top-header-height: (2 *$outer-vrt-padding) + max($title-total-height, $link-tot
 }
 
 
+#top-header .sr-friendly.focus-reveal:focus {
+    background-color: $clr-bground-base;
+    left: 0;
+    padding: 0.25rem 1rem;
+    top: $top-header-height-small;
+    z-index: 1;
+}
+
+
 #top-header {
     @include box-shadow(
         $offset-y: -2px,
@@ -63,11 +72,6 @@ $top-header-height: (2 *$outer-vrt-padding) + max($title-total-height, $link-tot
     border: 0;
     // border-bottom: 1px solid $clr-gray-300;
     font-family: $font-sans-serif;
-
-    .sr-friendly.focus-reveal:focus {
-        background-color: $clr-bground-base;
-        z-index: 1;
-    }
 }
 
 
@@ -229,5 +233,9 @@ $top-header-height: (2 *$outer-vrt-padding) + max($title-total-height, $link-tot
     /* body */ .v-scrolled #top-header {
         // show top header
         top: 0;
+    }
+
+    #top-header .sr-friendly.focus-reveal:focus {
+        top: $top-header-height;
     }
 }

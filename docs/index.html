@@ -15,37 +15,10 @@
   <link rel="stylesheet" type="text/css" href="css/home.min.css" />
 </head>
 <body id="page-top">
-<!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v8.0'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="104290691428680"
-  theme_color="#f05f40"
-  logged_in_greeting="Bonjour, n'hésitez pas à me poser vos questions !"
-  logged_out_greeting="Bonjour, n'hésitez pas à me poser vos questions !">
-      </div>
-
   <header id="top-header">
-    <div class="container">
-      <a href="#main-content" tabindex="1" class="sr-friendly focus-reveal">Aller au contenu</a>
+    <a data-smooth-scroll href="#main-content" tabindex="1" class="sr-friendly focus-reveal">Aller au contenu</a>
 
+    <div class="container">
       <h1 class="main-brand"><a data-smooth-scroll href="#page-top">HYPNO.CAT</a></h1>
 
       <nav role="navigation">
@@ -303,29 +276,20 @@
           </p>
 
           <p class="text-justify">
-            Les séances ont lieu aux centres de bien-être <a href="https://www.facebook.com/lapepinieresweetdojo/" target="_blank"><em>La Pépinière</em></a>
-            et <a href="https://www.facebook.com/ORANantes" target="_blank"><em>Ora Nantes</em></a> selon les jours.
+            Les séances ont lieu au centre de bien-être <a href="https://www.facebook.com/lapepinieresweetdojo/" target="_blank"><em>La Pépinière</em></a>.
             Dans <em>certains cas</em>,
             les séances peuvent avoir lieu en déplacement à domicile,
-            cependant mon périmètre de mobilité est restreint à l'hyper-centre et à la moitié Est de l'île de Nantes.
+            cependant mon périmètre de mobilité est restreint à l'hyper-centre et à la moitié Ouest de l'île de Nantes entre République et le Hangar à Bananes.
           </p>
 
-          <p class="text-justify">
-            <div class="text-left">
+          <div class="location">
+            <span class="location-address">
               <a href="https://www.facebook.com/lapepinieresweetdojo/" target="_blank"><em>La Pépinière</em></a>,
               <span class="p-street-address">7 place des Enfants Nantais,</span>
               <span class="p-postal-code">44000</span> <span class="p-locality">Nantes</span>
-              <iframe class="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9199.840369957794!2d-1.5572093097959259!3d47.21721536905306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee93900e8d17%3A0xde27404835c5ebc!2s7%20Place%20des%20Enfants%20Nantais%2C%2044000%20Nantes!5e0!3m2!1sen!2sfr!4v1601072637997!5m2!1sen!2sfr" height="225" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-
-            <div class="text-left">
-              <a href="https://www.facebook.com/ORANantes" target="_blank"><em>Ora Nantes</em></a>,
-              <span class="p-street-address">7 rue Magdeleine,</span>
-              <span class="p-postal-code">44200</span> <span class="p-locality">Nantes</span>
-              <iframe class="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.573826020124!2d-1.570500578147018!3d47.20486415883281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec2503d558ff%3A0x4ea0b16567a193ad!2sOra%20Nantes!5e0!3m2!1sen!2sfr!4v1603462141532!5m2!1sen!2sfr" height="225" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-          </p>
-
+            </span>
+            <iframe height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9199.840369957794!2d-1.5572093097959259!3d47.21721536905306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee93900e8d17%3A0xde27404835c5ebc!2s7%20Place%20des%20Enfants%20Nantais%2C%2044000%20Nantes!5e0!3m2!1sen!2sfr!4v1601072637997!5m2!1sen!2sfr"></iframe>
+          </div>
 
           <div class="gallery text-center">
             <span class="gallery-entry">
@@ -384,11 +348,9 @@
 
           <span class="hz-separator"></span>
 
-          <p class="text-left">
-            <div style="float: left; margin-right: 45px;">
-              <img width="175px" src="img/gilles.png" style="border: 1px solid #f05f40;" />
-            </div>
-          </p>
+          <div class="mugshot">
+            <img width="175px" src="img/gilles.png" />
+          </div>
 
           <p class="text-left">
             Mon parcours <em>relatif à l'hypnose</em> est le suivant:
@@ -396,11 +358,12 @@
               <li>2015 - Autodidacte</li>
               <li>2016 - Technicien en Hypnose Ericksonienne, <i>Psynapse</i></li>
               <li>2016 - Certification de compétence "Street Hypnose", <i>Street-Hypnose</i></li>
-              <li>2016 - <a href="psynapse_fr.pdf" target="_blank">Praticien en Hypnose Ericksonienne, <i>Psynapse</i></a></li>
+              <li>2016 - Certification de <a href="psynapse_fr.pdf" target="_blank">Praticien en Hypnose Ericksonienne</a>, <i>Psynapse</i></li>
               <li>2017 - Certification de compétence "Hypnose Générale", <i>Street-Hypnose</i></li>
               <li>2017 - Hypnose et douleurs, <i>Hunkaar</i></li>
               <li>2018 - Hypnose expérimentale, <i>Street-Hypnose</i></li>
-              <li>2018-2019 - Formation à la communication avec l'inconscient</li>
+              <li>2018-2019 - Formation à la communication avec l'inconscient, <i>Hunkaar</i></li>
+              <li>2020 - Certification de <a href="hunkaar.pdf" target="_blank">Praticien en Hypnose méthode "Hunkaar"</a>, <i>Hunkaar</i></li>
             </ul>
           </p>
 
@@ -425,6 +388,9 @@
           <div class="sub-container">
             <span class="hz-separator"></span>
             <p class="text-center">
+              <a href="https://formations.hunkaar.fr/carte-hypnotherapeutes/" data-caption="praticien certifie Hunkaar" aria-label="Hunkaar" target="_blank">
+                <img class="thumbnail" src="img/hunkaar.png" alt="" height="80px" style="margin: 5px;">
+              </a>
               <a href="https://ffhtb.fr/praticiens-certifies/?page=c" data-caption="praticien certifie F.F.H.T.B." aria-label="F.F.H.T.B." target="_blank">
                 <img class="thumbnail" src="img/ffhtb.jpg" alt="" height="80px" style="margin: 5px;">
               </a>
