@@ -1,0 +1,17 @@
+#legal {
+    display: flex;
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .references {
+        display: flex;
+        flex-wrap: wrap; // wrap line on narrow (mobile) viewports
+        justify-content: space-evenly;
+    }
+
+    .references a {
+        margin: 5px 10px;
+    }
+}
