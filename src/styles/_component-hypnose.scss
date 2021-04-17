@@ -1,27 +1,29 @@
 #hypnose {
     .side-img {
-        float: right;
-        height: 430px;
-        margin-right: -180px;
-        width: 330px;
+        display: none; // hidden for narrow displays
     }
 
-    .side-img {
-        /*
-            Using image itself to define the shape would be better, BUT it
-            requires a bit of understanding of CORS :/
-            See: https://github.com/w3c/csswg-drafts/issues/1481
+    @media (above-width($breakpoint-desktop)) and (min-aspect-ratio: 4/3) {
+        .side-img {
+            display: block;
+            float: right;
+            margin-right: -180px;
+            /*
+                Using image itself to define the shape would be better, BUT it
+                requires a bit of understanding of CORS :/
+                See: https://github.com/w3c/csswg-drafts/issues/1481
 
-            On the other hand, using polygon() will work whatever the setup
+                On the other hand, using polygon() will work whatever the setup
 
-            polygon() expects a series of coordinates x y, x1 y1, x2 y2, ....
-            But since the image is scaled by css, those coordinates should be given
-            as percent values (relative to the displayed size).
+                polygon() expects a series of coordinates x y, x1 y1, x2 y2, ....
+                But since the image is scaled by css, those coordinates should be given
+                as percent values (relative to the displayed size).
 
-            Easiest way to get that list of points is use an image editing software
-            to resize the image to 100px x 100px and draw the shape with straight
-            lines.
-         */
-        shape-outside: polygon(50% 0, 30% 20%, 30% 35%, 5% 35%, 0 40%, 0 55%, 10% 65%, 25% 65%, 25% 75%, 20% 80%, 20% 90%, 30% 100%);
+                Easiest way to get that list of points is use an image editing software
+                to resize the image to 100px x 100px and draw the shape with straight
+                lines.
+            */
+            shape-outside: polygon(50% 0, 30% 20%, 30% 35%, 5% 35%, 0 40%, 0 55%, 10% 65%, 25% 65%, 25% 75%, 20% 80%, 20% 90%, 30% 100%);
+        }
     }
 }
