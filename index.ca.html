@@ -17,9 +17,9 @@
 <body id="page-top">
 
   <header id="top-header">
-    <div class="container">
-      <a href="#main-content" tabindex="1" class="sr-friendly focus-reveal">Aller au contenu</a>
+    <a data-smooth-scroll href="#main-content" tabindex="1" class="sr-friendly focus-reveal">Aller au contenu</a>
 
+    <div class="container">
       <h1 class="main-brand"><a data-smooth-scroll href="#page-top">HYPNO.CAT</a></h1>
 
       <nav role="navigation">
@@ -60,24 +60,34 @@
   </header>
 
 
-  <section id="hero" aria-hidden="true">
+  <!--
+    section tags are relevant to a11y DOM tree
+    But if element is to be ignored by assistive tech, then a div tag will do good enough.
+  -->
+  <div id="hero" aria-hidden="true">
     <p aria-hidden="true" class="action-jumpNext">
       <a data-smooth-scroll href="#hypnose" class="btn btn-xl btn-primary">Entrar</a>
     </p>
-  </section>
+  </div>
 
 
   <main id="main-content">
 
     <div id="bottom-image" aria-hidden="true"></div>
 
-    <section id="hypnose" class="top-section">
+    <!--
+        section should have a defined label / title
+        aria-labelledby must point to an existing id
+    -->
+    <section id="hypnose" aria-labelledby="hypnose-title"  class="top-section">
       <div class="container">
         <div class="sub-container">
 
-          <h2 class="text-center">Hipnosi, en poques paraules</h2>
+          <h2 id="hypnose-title" class="text-center">Hipnosi, en poques paraules</h2>
 
           <span class="hz-separator"></span>
+
+          <img src="img/felix.resized.min.png" height="430" width="330" alt="" class="side-img" />
 
           <p class="text-justify">
             La hipnosi és un estat <em>naturalment</em> accessible per a <em>TODES</em> i que es pot <em>desencadenar mitjançant la tècnica</em> en un subjecte <em>voluntari</em>.
@@ -116,11 +126,11 @@
     </section>
 
 
-    <section id="indications" class="top-section">
+    <section id="indications" aria-labelledby="indications-title" class="top-section">
       <div class="container">
         <div class="sub-container">
 
-          <h2 class="text-center">Indicacions</h2>
+          <h2 id="indications-title" class="text-center">Indicacions</h2>
 
           <span class="hz-separator"></span>
 
@@ -151,31 +161,36 @@
       </div>
     </section>
 
-    <footer>
-      <section id="legal" class="top-section">
+
+    <!--
+        Like section, footer should have a defined label / title
+        If the element does not contain a title element, then a label
+        can be explicitly stated with "aria-label"
+    -->
+    <footer id="legal" aria-label="Legal">
         <div class="container">
-          <div class="sub-container">
             <span class="hz-separator"></span>
-            <p class="text-center">
-              <a href="https://ffhtb.fr/praticiens-certifies/?page=c" data-caption="praticien certifie F.F.H.T.B." aria-label="F.F.H.T.B." target="_blank">
-                <img class="thumbnail" src="img/ffhtb.jpg" alt="" height="80px" style="margin: 5px;">
-              </a>
-              <a href="https://ffhtb.fr/praticiens-certifies/?page=c" data-caption="praticien certifie F.F.H.T.B." aria-label="F.F.H.T.B." target="_blank">
-                <img class="thumbnail" src="img/psynapse.png" alt="" height="80px" style="margin: 5px;">
-              </a>
-              <a href="https://www.nanteshypnose.fr" data-caption="membre de l'association Nantes Hypnose" aria-label="Nantes hypnose" target="_blank">
-                <img class="thumbnail" src="img/nantes-hypnose.png" alt="" height="80px" style="margin: 5px;">
-              </a>
+            <p class="references">
+                <a href="https://ffhtb.fr/praticiens-certifies/?page=c" target="_blank">
+                    <span class="sr-friendly">Certified by Fédération Française d’Hypnose et de Thérapie Brève</span>
+                    <img class="thumbnail" src="img/ffhtb.jpg" alt="" height="80px">
+                </a>
+                <a href="https://psynapse.fr/" target="_blank">
+                    <span class="sr-friendly">Certified by Psynapse</span>
+                    <img class="thumbnail" src="img/psynapse.png" alt="" height="80px">
+                </a>
+                <a href="https://www.nanteshypnose.fr" target="_blank">
+                    <span class="sr-friendly">Member of Nantes Hypnose association</span>
+                    <img class="thumbnail" src="img/nantes-hypnose.png" alt="" height="80px">
+                </a>
             </p>
             <p class="text-left">
-              <small>
-                <br /><em>SIRET:</em> 515 053 908 00031
-                <br /><em>Assurance Medinat:</em> MDNA25679
-              </small>
+                <small>
+                    <br /><em>SIRET:</em> 515 053 908 00031
+                    <br /><em>Assurance Medinat:</em> MDNA25679
+                </small>
             </p>
-          </div>
         </div>
-      </section>
     </footer>
 
   </main>
