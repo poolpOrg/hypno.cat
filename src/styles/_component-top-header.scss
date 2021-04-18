@@ -197,7 +197,7 @@ $top-header-height: (2 *$outer-vrt-padding) + max($title-total-height, $link-tot
         align-items: baseline;
         display: flex;
         justify-content: space-between;
-        max-width: 1136px;
+        max-width: $breakpoint-desktop-hd * 0.93;
     }
 
     #top-header nav ul {

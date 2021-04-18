@@ -10,8 +10,10 @@
 @import "component-hz-separator";
 @import "component-top-header";
 @import "component-hero";
-@import "component-contact";
-@import "component-parcours";
-@import "component-bottom-image";
+@import "component-hypnose";        // named after id of element
+@import "component-contact";        // named after id of element
+@import "component-parcours";       // named after id of element
+@import "component-legal";          // named after id of element
+@import "component-bottom-image";   // fixed bottom image on desktop
 
 @import "layout";

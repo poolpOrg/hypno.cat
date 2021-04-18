@@ -24,13 +24,8 @@ module.exports = {
                 ignore: ["blockless-at-rules"]
             }
         ],
-        "selector-class-pattern": [
-            "^[a-z0-9\\-]+$",
-            {
-                "message": "Selector should be written in lowercase with hyphens (selector-class-pattern)",
-                "severity": "warning"
-            }
-        ],
+        // to hell with lowercase only selectors !
+        "selector-class-pattern": "^[a-zA-Z0-9\\-]+$",
         "selector-list-comma-newline-after": "always-multi-line",
         "selector-max-compound-selectors": 5,
         "selector-max-id": 1,

@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="css/home.min.css" />
 </head>
 <body id="page-top">
+
   <header id="top-header">
     <a data-smooth-scroll href="#main-content" tabindex="1" class="sr-friendly focus-reveal">Aller au contenu</a>
 
@@ -63,24 +64,34 @@
   </header>
 
 
-  <section id="hero" aria-hidden="true">
+  <!--
+    section tags are relevant to a11y DOM tree
+    But if element is to be ignored by assistive tech, then a div tag will do good enough.
+  -->
+  <div id="hero" aria-hidden="true">
     <p aria-hidden="true" class="action-jumpNext">
       <a data-smooth-scroll href="#hypnose" class="btn btn-xl btn-primary">Entrer</a>
     </p>
-  </section>
+  </div>
 
 
   <main id="main-content">
 
     <div id="bottom-image" aria-hidden="true"></div>
 
-    <section id="hypnose" class="top-section">
+    <!--
+        section should have a defined label / title
+        aria-labelledby must point to an existing id
+    -->
+    <section id="hypnose" aria-labelledby="hypnose-title" class="top-section">
       <div class="container">
         <div class="sub-container">
 
-          <h2 class="text-center">L'hypnose, en quelques mots</h2>
+          <h2 id="hypnose-title" class="text-center">L'hypnose, en quelques mots</h2>
 
           <span class="hz-separator"></span>
+
+          <img src="img/felix.resized.min.png" height="430" width="330" alt="" class="side-img" />
 
           <p class="text-justify">
             L'hypnose est un état <em>naturellement</em> accessible à <em>TOUS</em> et que l'on peut <em>déclencher par la technique</em> chez un sujet <em>volontaire</em>.
@@ -121,11 +132,11 @@
     </section>
 
 
-    <section id="indications" class="top-section">
+    <section id="indications" aria-labelledby="indications-title" class="top-section">
       <div class="container">
         <div class="sub-container">
 
-          <h2 class="text-center">Indications</h2>
+          <h2 id="indications-title" class="text-center">Indications</h2>
 
           <span class="hz-separator"></span>
 
@@ -164,11 +175,11 @@
     </section>
 
 
-    <section id="deroulement" class="top-section">
+    <section id="deroulement" aria-labelledby="deroulement-title" class="top-section">
       <div class="container">
         <div class="sub-container">
 
-          <h2 class="text-center">Déroulement</h2>
+          <h2 id="deroulement-title" class="text-center">Déroulement</h2>
 
           <span class="hz-separator"></span>
 
@@ -217,11 +228,11 @@
     </section>
 
 
-    <section id="tarifs" class="top-section">
+    <section id="tarifs" aria-labelledby="tarifs-title" class="top-section">
       <div class="container">
         <div class="sub-container">
 
-          <h2 class="text-center">Tarifs</h2>
+          <h2 id="tarifs-title" class="text-center">Tarifs</h2>
 
           <span class="hz-separator"></span>
 
@@ -253,11 +264,11 @@
     </section>
 
 
-    <section id="contact" class="top-section">
+    <section id="contact" aria-labelledby="contact-title" class="top-section">
       <div class="container">
         <div class="sub-container">
 
-          <h2 class="text-center">Contact</h2>
+          <h2 id="contact-title" class="text-center">Contact</h2>
 
           <span class="hz-separator"></span>
 
@@ -340,16 +351,16 @@
     </section>
 
 
-    <section id="parcours" class="top-section">
+    <section id="parcours" aria-labelledby="parcours-title" class="top-section">
       <div class="container">
         <div class="sub-container">
 
-          <h2 class="text-center">Parcours</h2>
+          <h2 id="parcours-title" class="text-center">Parcours</h2>
 
           <span class="hz-separator"></span>
 
           <div class="mugshot">
-            <img width="175px" src="img/gilles.png" />
+            <img height="224" width="175" src="img/gilles.scaled.min.png" alt="Photo de Gilles Chehade" />
           </div>
 
           <p class="text-left">
@@ -374,42 +385,42 @@
             Je continue également à me former par le biais d'ouvrages et par l'analyse de techniques.
           </p>
 
-          <p aria-hidden="true" class="action-jumpNext">
+          <!-- <p aria-hidden="true" class="action-jumpNext">
             <a data-smooth-scroll href="#legal" class="btn btn-xl btn-secondary">Mentions légales</a>
-          </p>
+          </p> -->
 
         </div>
       </div>
     </section>
 
-    <footer>
-      <section id="legal" class="top-section">
+    <footer id="legal" aria-label="Mentions légales">
         <div class="container">
-          <div class="sub-container">
             <span class="hz-separator"></span>
-            <p class="text-center">
-              <a href="https://formations.hunkaar.fr/carte-hypnotherapeutes/" data-caption="praticien certifie Hunkaar" aria-label="Hunkaar" target="_blank">
-                <img class="thumbnail" src="img/hunkaar.png" alt="" height="80px" style="margin: 5px;">
-              </a>
-              <a href="https://ffhtb.fr/praticiens-certifies/?page=c" data-caption="praticien certifie F.F.H.T.B." aria-label="F.F.H.T.B." target="_blank">
-                <img class="thumbnail" src="img/ffhtb.jpg" alt="" height="80px" style="margin: 5px;">
-              </a>
-              <a href="https://ffhtb.fr/praticiens-certifies/?page=c" data-caption="praticien certifie F.F.H.T.B." aria-label="F.F.H.T.B." target="_blank">
-                <img class="thumbnail" src="img/psynapse.png" alt="" height="80px" style="margin: 5px;">
-              </a>
-              <a href="https://www.nanteshypnose.fr" data-caption="membre de l'association Nantes Hypnose" aria-label="Nantes hypnose" target="_blank">
-                <img class="thumbnail" src="img/nantes-hypnose.png" alt="" height="80px" style="margin: 5px;">
-              </a>
+            <p class="references">
+                <a href="https://formations.hunkaar.fr/carte-hypnotherapeutes/" target="_blank">
+                    <span class="sr-friendly">Praticien certifié Hunkaar</span>
+                    <img src="img/hunkaar.png" alt="" height="80px">
+                </a>
+                <a href="https://ffhtb.fr/praticiens-certifies/?page=c" target="_blank">
+                    <span class="sr-friendly">Praticien certifié par la Fédération Française d’Hypnose et de Thérapie Brève</span>
+                    <img class="thumbnail" src="img/ffhtb.jpg" alt="" height="80px">
+                </a>
+                <a href="https://psynapse.fr/" target="_blank">
+                    <span class="sr-friendly">Praticien certifié Psynapse</span>
+                    <img class="thumbnail" src="img/psynapse.png" alt="" height="80px">
+                </a>
+                <a href="https://www.nanteshypnose.fr" target="_blank">
+                    <span class="sr-friendly">Membre de l'association Nantes Hypnose</span>
+                    <img class="thumbnail" src="img/nantes-hypnose.png" alt="" height="80px">
+                </a>
             </p>
             <p class="text-left">
-              <small>
-                <br /><em>SIRET:</em> 515 053 908 00031
-                <br /><em>Assurance Medinat:</em> MDNA25679
-              </small>
+                <small>
+                    <br /><em>SIRET:</em> 515 053 908 00031
+                    <br /><em>Assurance Medinat:</em> MDNA25679
+                </small>
             </p>
-          </div>
         </div>
-      </section>
     </footer>
 
   </main>
