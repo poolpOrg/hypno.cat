@@ -144,7 +144,7 @@ h6 {
   line-height: 1.2; }
 
 ul {
-  padding-left: 1.5rem; }
+  padding-left: 1rem; }
   @media (min-width: 640px) {
     ul {
       list-style-position: inside; } }
@@ -182,6 +182,9 @@ section h2 {
 
 .text-left {
   text-align: left; }
+
+.cols-group {
+  display: flex; }
 
 .notice {
   color: #f00; }
@@ -459,9 +462,7 @@ section h2 {
     background: url("../img/icons_sheet.svg") -34.28571px 0 / 102.85714px 32px no-repeat; } }
 
 .mugshot {
-  float: left;
-  margin-bottom: 1rem;
-  margin-right: 1.75rem; }
+  margin-right: 1.25rem; }
   .mugshot img {
     border: 1px solid #f05f40; }
 
