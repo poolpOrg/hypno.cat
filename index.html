@@ -1,436 +1,324 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <title>hypno.cat</title>
-
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="og:image" content="https://hypno.cat/img/hypnocat.jpg">
-  <meta name="twitter:image" content="https://hypno.cat/img/hypnocat.jpg">
-
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" type="text/css" href="css/home.min.css" />
-</head>
-<body id="page-top">
-
-  <header id="top-header">
-    <a data-smooth-scroll href="#main-content" tabindex="1" class="sr-friendly focus-reveal">Aller au contenu</a>
-
-    <div class="container">
-      <h1 class="main-brand"><a data-smooth-scroll href="#page-top">HYPNO.CAT</a></h1>
-
-      <nav role="navigation">
-        <button type="button" class="foldable-toggle" aria-controls="main-nav" aria-expanded="false">
-          <i aria-hidden="true" class="icon icon-bars"></i>
-          <span class="sr-friendly">Navigation</span>
-        </button>
-        <div id="main-nav" class="foldable-element foldable-ephemeral">
-          <div class="nav-group sections">
-            <span class="sr-friendly group-label">Sections</span>
-            <ul class="naked-list">
-              <li><a data-smooth-scroll class="nav-option" href="#hypnose">Hypnose</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#indications">Indications</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#deroulement">Déroulement</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#tarifs">Tarifs</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#contact">Contact</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#parcours">Parcours</a></li>
-              <!--
-              <li><a data-smooth-scroll class="nav-option" href="#questions">Questions</a></li>
-              -->
-            </ul>
-          </div>
-          <div class="nav-group l10n">
-            <span class="sr-friendly group-label">Langues</span>
-            <ul class="naked-list">
-            <!--
-              links to other localizations
-              - `lang` attribute states the locale for the link label
-              - `hreflang` attribute states the locale of target page
-            -->
-              <!--
-              <li><a lang="fr" hreflang="fr" class="nav-option" href="">Français</a></li>
-              -->
-              <li class="active"><span class="nav-option">Français</span></li>
-              <li><a lang="en" hreflang="en" class="nav-option" href="index.en.html">English</a></li>
-              <li><a lang="ca" hreflang="ca" class="nav-option" href="index.ca.html">Català</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-
-  <!--
-    section tags are relevant to a11y DOM tree
-    But if element is to be ignored by assistive tech, then a div tag will do good enough.
-  -->
-  <div id="hero" aria-hidden="true">
-    <p aria-hidden="true" class="action-jumpNext">
-      <a data-smooth-scroll href="#hypnose" class="btn btn-xl btn-primary">Entrer</a>
-    </p>
-  </div>
-
-
-  <main id="main-content">
-
-    <div id="bottom-image" aria-hidden="true"></div>
-
-    <!--
-        section should have a defined label / title
-        aria-labelledby must point to an existing id
-    -->
-    <section id="hypnose" aria-labelledby="hypnose-title" class="top-section">
-      <div class="container">
-        <div class="sub-container">
-
-          <h2 id="hypnose-title" class="text-center">L'hypnose, en quelques mots</h2>
-
-          <span class="hz-separator"></span>
-
-          <p class="text-justify">
-            L'hypnose est un état <em>naturel</em> accessible à <em>TOUS</em> et que l'on peut <em>déclencher</em> chez un sujet <em>volontaire</em>.
-            Le subconscient peut alors s'exprimer plus librement et
-            répondre aux questions concernant ce qu'il se passe <i>à l'intérieur</i>
-            afin de <em>résoudre les conflits inconscients</em>.
-          </p>
-
-          <p class="text-justify">
-            La personne en transe n'est <em>ni inconsciente, ni manipulable à souhait</em>.
-            Dans une relation de <em>confiance</em> et de <em>coopération</em> avec l'hypnotiseur,
-            elle se laisse <em>glisser</em> dans un état de réactions automatiques aux suggestions,
-            tout en conservant sa capacité à <em>reprendre le contrôle</em> et <em>s'y soustraire</em> si elle le souhaite.
-          </p>
-
-          <p aria-hidden="true" class="action-jumpNext">
-            <a data-smooth-scroll href="#indications" class="btn btn-xl btn-secondary">Indications</a>
-          </p>
-
-        </div>
-      </div>
-    </section>
-
-
-    <section id="indications" aria-labelledby="indications-title" class="top-section">
-      <div class="container">
-        <div class="sub-container">
-
-          <h2 id="indications-title" class="text-center">Indications</h2>
-
-          <span class="hz-separator"></span>
-
-          <p class="text-justify">
-            L'hypnose est indiquée pour la <em>déprogrammation de comportements</em>,
-            la <em>libération d'émotions refoulées</em>,
-            la gestion de <em>traumatismes</em>,
-            de <em>deuils</em>,
-            de <em>phobies</em>,
-            de <em>douleurs chroniques</em> et plus généralement de <em>troubles psychosomatiques</em> divers.
-          </p>
-
-          <p class="text-justify">
-            La pratique de l'hypnose n'est <em>ni de la médecine</em>,
-            <em>ni de la psychothérapie</em>:
-            <em>il ne sera pas fait de diagnostic</em>.
-          </p>
-
-          <p class="text-justify">
-            En cas de pathologie connue,
-            consultez votre thérapeute <em>avant</em> d'entamer les séances afin de vous assurer qu'il n'y a pas de contre-indications.
-            Je m'engage pour ma part,
-            <em>dans votre intérêt</em>,
-            à écourter toute séance qui me semblerait montrer un signe manifeste de contre-indication <em>sans vous la facturer</em>.
-          </p>
-
-          <p class="text-justify">
-            Les séances d'hypnose <em>ne sauraient se substituer à un suivi thérapeutique existant</em>:
-            <strong class="notice">n'interrompez JAMAIS un traitement ou un suivi sans en faire part à votre thérapeute</strong>.
-          </p>
-
-
-          <p aria-hidden="true" class="action-jumpNext">
-            <a data-smooth-scroll href="#deroulement" class="btn btn-xl btn-secondary">Déroulement</a>
-          </p>
-
-        </div>
-      </div>
-    </section>
-
-
-    <section id="deroulement" aria-labelledby="deroulement-title" class="top-section">
-      <div class="container">
-        <div class="sub-container">
-
-          <h2 id="deroulement-title" class="text-center">Déroulement</h2>
-
-          <span class="hz-separator"></span>
-
-          <p class="text-justify">
-            Si le client n'a jamais fait d'hypnose <em>avec moi</em>,
-            nous débutons notre travail par <em>une ou plusieurs</em> séances pour se familiariser avec cet état et obtenir les outils dont nous avons besoin.
-            Ces outils sont acquis assez rapidement chez la plupart des personnes,
-            le plus souvent dès la première séance ou encore en une à trois séances,
-            mais cela dépend de chaque individu et ces outils sont un pré-requis pour la suite.
-          </p>
-
-          <p class="text-justify">
-            Une fois familiarisé avec l'hypnose,
-            le client est mis en transe pour que je puisse interroger son subconscient.
-            Il ne s'agit pas de suggérer la disparition d'un symptôme sans en comprendre la cause,
-            mais de trouver une résolution convenable à sa cause pour qu'il devienne inutile et puisse disparaître.
-            Il arrive que l'on soit amené à <em>revivre des souvenirs traumatiques</em> et <em>libérer des émotions refoulées</em>:
-            <strong class="notice">il ne s'agit pas de séances de relaxation</strong>.
-          </p>
-
-          <p class="text-justify">
-            À chaque fin de séance,
-            un temps est pris pour répondre aux questions et s'assurer que la personne est bien réveillée en repartant du cabinet.
-            Il est recommandé de ne pas reprendre la route ou le travail dans la foulée,
-            certaines séances pouvant être fatigantes et nécessiter de prendre un petit temps pour soi.
-          </p>
-
-          <p class="text-justify">
-            L'hypnose est souvent présentée comme une thérapie un peu magique qui règle tous les soucis en deux séances,
-            malheureusement <em>c'est une vision fausse</em> qui provoque chez les clients une attente irréaliste et de nombreuses déceptions.
-            Le nombre de séances dépend de <em>la technique de l'hypnotiseur</em>,
-            du <em>niveau de coopération</em> du sujet,
-            mais aussi de <em>ce qui provoque la demande</em>:
-            derrière une même phobie peuvent aussi bien se cacher <em>une seule ou plusieurs causes</em>
-            chez deux personnes différentes.
-            <em>Il n'y a pas de généralités mais uniquement du cas par cas</em>.
-          </p>
-
-          <p aria-hidden="true" class="action-jumpNext">
-            <a data-smooth-scroll href="#tarifs" class="btn btn-xl btn-secondary">Tarifs</a>
-          </p>
-
-        </div>
-      </div>
-    </section>
-
-
-    <section id="tarifs" aria-labelledby="tarifs-title" class="top-section">
-      <div class="container">
-        <div class="sub-container">
-
-          <h2 id="tarifs-title" class="text-center">Tarifs</h2>
-
-          <span class="hz-separator"></span>
-
-          <p class="text-justify">
-            Le <em>tarif normal</em> est de <em>90 EUR</em> par séance.
-          </p>
-
-          <p class="text-justify">
-            Le <em>tarif réduit</em> pour les <em>étudiants</em> et <em>personnes en situation précaire</em> est de <em>60 EUR</em> sur présentation d'un justificatif.
-          </p>
-
-          <p class="text-justify">
-            Le règlement s'effectue <em>à chaque fin de séance</em>,
-            de préférence par <em>carte bancaire</em>,
-            mais également par <em>chèque</em> ou <em>espèces</em>.
-            Des arrangements sont possibles pour différer l'encaissement des chèques.
-          </p>
-
-          <p class="text-justify">
-            Une facture est disponible <em>pour chaque séance</em> et peut être envoyée par e-mail sur simple demande.
-          </p>
-
-          <p>&nbsp;</p>
-          <hr />
-          <p>&nbsp;</p>
-
-          <p class="text-justify">
-            En échange d'une <em>autorisation de filmer</em>,
-            je réalise des <strong class="notice">séances gratuitement</strong> et m'engage à l'écrit à ce que ne soient publiés que des extraits ne permettant pas l'identification du sujet.
-          </p>
-
-          <p class="text-justify">
-            Ces séances sont strictement équivalentes aux séances payantes.
-          </p>
-
-
-
-          <p aria-hidden="true" class="action-jumpNext">
-            <a data-smooth-scroll href="#contact" class="btn btn-xl btn-secondary">Contact</a>
-          </p>
-
-        </div>
-      </div>
-    </section>
-
-
-    <section id="contact" aria-labelledby="contact-title" class="top-section">
-      <div class="container">
-        <div class="sub-container">
-
-          <h2 id="contact-title" class="text-center">Contact</h2>
-
-          <span class="hz-separator"></span>
-
-          <p class="text-justify">
-            La prise de rendez-vous se fait par <a class="p-tel" href="tel:07.66.397.394">téléphone</a>,
-            <a class="p-tel" href="sms:07.66.397.394">texto</a> ou <a class="u-email" href="mailto:gilles@hypno.cat">e-mail</a>.
-          </p>
-
-          <p class="text-justify">
-            S'il s'agit d'une <em>première séance</em> avec moi,
-            elle est <em>obligatoirement</em> précédée d'un entretien téléphonique <em>avec la personne concernée</em>.
-            Durant cet échange,
-            je m'assure que votre demande <em>entre dans mon champs de compétences</em>,
-            que ma <em>méthodologie vous convient</em>,
-            et je prends le temps de <em>répondre à toutes vos interrogations</em> pour pouvoir aborder la première séance sereinement.
-          </p>
-
-          <p class="text-justify">
-            Les séances ont lieu au centre de bien-être <a href="https://www.facebook.com/lapepinieresweetdojo/" target="_blank"><em>La Pépinière</em></a>.
-            Dans <em>certains cas</em>,
-            les séances peuvent avoir lieu en déplacement à domicile,
-            cependant mon périmètre de mobilité est restreint à l'hyper-centre et à la moitié Ouest de l'île de Nantes entre République et le Hangar à Bananes.
-          </p>
-
-          <div class="location">
-            <span class="location-address">
-              <a href="https://www.facebook.com/lapepinieresweetdojo/" target="_blank"><em>La Pépinière</em></a>,
-              <span class="p-street-address">7 place des Enfants Nantais,</span>
-              <span class="p-postal-code">44000</span> <span class="p-locality">Nantes</span>
-            </span>
-            <iframe height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9199.840369957794!2d-1.5572093097959259!3d47.21721536905306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee93900e8d17%3A0xde27404835c5ebc!2s7%20Place%20des%20Enfants%20Nantais%2C%2044000%20Nantes!5e0!3m2!1sen!2sfr!4v1601072637997!5m2!1sen!2sfr"></iframe>
-          </div>
-
-          <div class="gallery text-center">
-            <span class="gallery-entry">
-              <a href="img/photos/cab3.jpg" data-caption="Vue salle d'attente" aria-label="Vue attente">
-                <img class="thumbnail" src="img/photos/cab3.min.jpg" alt="">
-              </a>
-            </span>
-            <span class="gallery-entry">
-              <a href="img/photos/cab1.jpg" data-caption="Vue interieure cabinet" aria-label="Vue interieure 1">
-                <img class="thumbnail" src="img/photos/cab1.min.jpg" alt="">
-              </a>
-            </span>
-            <span class="gallery-entry">
-              <a href="img/photos/cab2.jpg" data-caption="Vue interieure cabinet" aria-label="Vue interieure 2">
-                <img class="thumbnail" src="img/photos/cab2.min.jpg" alt="">
-              </a>
-            </span>
-          </div>
-
-          <p class="text-justify">
-            En cas d'annulation,
-            merci de prévenir <em>au moins 48 heures</em> avant notre rendez-vous afin que je puisse réaffecter le créneau à une autre personne.
-            Dans le cas contraire,
-            je ne considèrerai pas la séance comme dûe,
-            mais je refuserai de vous recevoir à l'avenir si l'annulation n'est pas justifiée.
-          </p>
-
-          <div class="action-contact">
-            <div class="contact contact-phone">
-              <i class="icon icon-phone"></i>
-              <span class="sr-friendly">Téléphone</span>
-              <a class="p-tel" href="tel:07.66.397.394">07.66.397.394</a>
-            </div>
-
-            <div class="contact contact-mail">
-              <i class="icon icon-mail"></i>
-              <span class="sr-friendly">Mél</span>
-              <a class="u-email" href="mailto:gilles@hypno.cat">gilles@hypno.cat</a>
-            </div>
-          </div>
-
-          <p aria-hidden="true" class="action-jumpNext">
-            <a data-smooth-scroll href="#parcours" class="btn btn-xl btn-secondary">Parcours</a>
-          </p>
-
-        </div>
-      </div>
-    </section>
-
-
-    <section id="parcours" aria-labelledby="parcours-title" class="top-section">
-      <div class="container">
-        <div class="sub-container">
-
-          <h2 id="parcours-title" class="text-center">Parcours</h2>
-
-          <span class="hz-separator"></span>
-
-          <div class="cols-group">
-            <div class="mugshot">
-              <img height="224" width="175" src="img/gilles.scaled.min.png" alt="Photo de Gilles Chehade" />
-            </div>
-
-            <div class="text-left">
-              Mon parcours <em>relatif à l'hypnose</em> est le suivant:
-              <ul>
-                <li>2015 - Autodidacte</li>
-                <li>2016 - Technicien en Hypnose Ericksonienne, <i>Psynapse</i></li>
-                <li>2016 - Certification de compétence "Street Hypnose", <i>Street-Hypnose</i></li>
-                <li>2016 - Certification de <a href="psynapse_fr.pdf" target="_blank">Praticien en Hypnose Ericksonienne</a>, <i>Psynapse</i></li>
-                <li>2017 - Certification de compétence "Hypnose Générale", <i>Street-Hypnose</i></li>
-                <li>2017 - Hypnose et douleurs, <i>Hunkaar</i></li>
-                <li>2018 - Hypnose expérimentale, <i>Street-Hypnose</i></li>
-                <li>2018-2019 - Formation à la communication avec l'inconscient, <i>Hunkaar</i></li>
-                <li>2020 - Certification de <a href="hunkaar.pdf" target="_blank">Praticien en Hypnose "Hunkaar"</a>, <i>Hunkaar</i></li>
-                <li>2021 - Stage d'hypnose ludique, <i><a href="https://www.nanteshypnose.fr/se-former-en-hypnose/" target="_blank">Nantes Hypnose</a></i></li>
-              </ul>
-            </div>
-          </div>
-
-          <p class="text-justify">
-            Dans une optique d'<em>amélioration continue</em>,
-            j'échange régulièrement avec différents praticiens pour <em>confronter nos pratiques</em>,
-            que ce soit par des <em>discussions informelles</em> ou de <em>supervisions</em>.
-            Je continue également à me former par le biais d'ouvrages et par l'analyse de techniques.
-          </p>
-
-          <!-- <p aria-hidden="true" class="action-jumpNext">
-            <a data-smooth-scroll href="#legal" class="btn btn-xl btn-secondary">Mentions légales</a>
-          </p> -->
-
-        </div>
-      </div>
-    </section>
-
-    <footer id="legal" aria-label="Mentions légales">
-        <div class="container">
-            <span class="hz-separator"></span>
-            <p class="references">
-                <a href="https://formations.hunkaar.fr/carte-hypnotherapeutes/" target="_blank">
-                    <span class="sr-friendly">Praticien certifié Hunkaar</span>
-                    <img src="img/hunkaar.png" alt="" height="80px">
-                </a>
-                <a href="https://ffhtb.fr/praticiens-certifies/?page=c" target="_blank">
-                    <span class="sr-friendly">Praticien certifié par la Fédération Française d’Hypnose et de Thérapie Brève</span>
-                    <img class="thumbnail" src="img/ffhtb.jpg" alt="" height="80px">
-                </a>
-                <a href="https://psynapse.fr/" target="_blank">
-                    <span class="sr-friendly">Praticien certifié Psynapse</span>
-                    <img class="thumbnail" src="img/psynapse.png" alt="" height="80px">
-                </a>
-                <a href="https://www.nanteshypnose.fr" target="_blank">
-                    <span class="sr-friendly">Membre de l'association Nantes Hypnose</span>
-                    <img class="thumbnail" src="img/nantes-hypnose.png" alt="" height="80px">
-                </a>
-            </p>
-            <p class="text-left">
-                <small>
-                    <br /><em>SIRET:</em> 515 053 908 00031
-                    <br /><em>Assurance Medinat:</em> MDNA25679
-                </small>
-            </p>
-        </div>
-    </footer>
-
-  </main>
-
-  <script src="js/home.min.js"></script>
-
-  <script src="vendors/gumshoe.min.js" async defer></script>
-  <link rel="stylesheet" type="text/css" href="vendors/baguetteBox.min.css">
-  <script src="vendors/baguetteBox.min.js" async defer></script>
+<!doctype html><html><head>
+<meta name=generator content="Hugo 0.92.2">
+<title>hypno.cat</title>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=og:image content="/img/hypnocat.jpg">
+<meta name=twitter:image content="/img/hypnocat.jpg">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel=stylesheet type=text/css>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel=stylesheet type=text/css>
+<link rel=stylesheet type=text/css href=/css/home.min.css>
+</head><body id=page-top><header id=top-header>
+<a data-smooth-scroll href=#main-content tabindex=1 class="sr-friendly focus-reveal">Aller au contenu</a>
+<div class=container>
+<h1 class=main-brand><a data-smooth-scroll href=#page-top>HYPNO.CAT</a></h1>
+<nav role=navigation>
+<button type=button class=foldable-toggle aria-controls=main-nav aria-expanded=false>
+<i aria-hidden=true class="icon icon-bars"></i>
+<span class=sr-friendly>Navigation</span>
+</button>
+<div id=main-nav class="foldable-element foldable-ephemeral">
+<div class="nav-group sections">
+<span class="sr-friendly group-label">Sections</span>
+<ul class=naked-list>
+<li><a data-smooth-scroll class=nav-option href=#hypnose>Hypnose</a></li>
+<li><a data-smooth-scroll class=nav-option href=#indications>Indications</a></li>
+<li><a data-smooth-scroll class=nav-option href=#deroulement>Déroulement</a></li>
+<li><a data-smooth-scroll class=nav-option href=#tarifs>Tarifs</a></li>
+<li><a data-smooth-scroll class=nav-option href=#contact>Contact</a></li>
+<li><a data-smooth-scroll class=nav-option href=#parcours>Parcours</a></li>
+</ul>
+</div>
+<div class="nav-group l10n">
+<span class="sr-friendly group-label">Langues</span>
+<ul class=naked-list>
+<li class=active><span class=nav-option>Français</span></li>
+<li><a lang=ca hreflang=ca class=nav-option href=/catala>Català</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</header><div id=hero aria-hidden=true>
+<p aria-hidden=true class=action-jumpNext>
+<a data-smooth-scroll href=#hypnose class="btn btn-xl btn-primary">Entrer</a>
+</p>
+</div>
+<main id=main-content>
+<div id=bottom-image aria-hidden=true></div>
+<section id=hypnose aria-labelledby=hypnose-title class=top-section>
+<div class=container>
+<div class=sub-container>
+<h2 id=hypnose-title class=text-center>L'hypnose, en quelques mots</h2>
+<span class=hz-separator></span>
+<p class=text-justify>
+L'hypnose est un état <em>naturel</em> accessible à <em>TOUS</em> et que l'on peut <em>déclencher</em> chez un sujet <em>volontaire</em>.
+Le subconscient peut alors s'exprimer plus librement et
+répondre aux questions concernant ce qu'il se passe <i>à l'intérieur</i>
+afin de <em>résoudre les conflits inconscients</em>.
+</p>
+<p class=text-justify>
+La personne en transe n'est <em>ni inconsciente, ni manipulable à souhait</em>.
+Dans une relation de <em>confiance</em> et de <em>coopération</em> avec l'hypnotiseur,
+elle se laisse <em>glisser</em> dans un état de réactions automatiques aux suggestions,
+tout en conservant sa capacité à <em>reprendre le contrôle</em> et <em>s'y soustraire</em> si elle le souhaite.
+</p>
+<p aria-hidden=true class=action-jumpNext>
+<a data-smooth-scroll href=#indications class="btn btn-xl btn-secondary">Indications</a>
+</p>
+</div>
+</div>
+</section>
+<section id=indications aria-labelledby=indications-title class=top-section>
+<div class=container>
+<div class=sub-container>
+<h2 id=indications-title class=text-center>Indications</h2>
+<span class=hz-separator></span>
+<p class=text-justify>
+L'hypnose est indiquée pour la <em>déprogrammation de comportements</em>,
+la <em>libération d'émotions refoulées</em>,
+la gestion de <em>traumatismes</em>,
+de <em>deuils</em>,
+de <em>phobies</em>,
+de <em>douleurs chroniques</em> et plus généralement de <em>troubles psychosomatiques</em> divers.
+</p>
+<p class=text-justify>
+La pratique de l'hypnose n'est <em>ni de la médecine</em>,
+<em>ni de la psychothérapie</em>:
+<em>il ne sera pas fait de diagnostic</em>.
+</p>
+<p class=text-justify>
+En cas de pathologie connue,
+consultez votre thérapeute <em>avant</em> d'entamer les séances afin de vous assurer qu'il n'y a pas de contre-indications.
+Je m'engage pour ma part,
+<em>dans votre intérêt</em>,
+à écourter toute séance qui me semblerait montrer un signe manifeste de contre-indication <em>sans vous la facturer</em>.
+</p>
+<p class=text-justify>
+Les séances d'hypnose <em>ne sauraient se substituer à un suivi thérapeutique existant</em>:
+<strong class=notice>n'interrompez JAMAIS un traitement ou un suivi sans en faire part à votre thérapeute</strong>.
+</p>
+<p aria-hidden=true class=action-jumpNext>
+<a data-smooth-scroll href=#deroulement class="btn btn-xl btn-secondary">Déroulement</a>
+</p>
+</div>
+</div>
+</section>
+<section id=deroulement aria-labelledby=deroulement-title class=top-section>
+<div class=container>
+<div class=sub-container>
+<h2 id=deroulement-title class=text-center>Déroulement</h2>
+<span class=hz-separator></span>
+<p class=text-justify>
+Si le client n'a jamais fait d'hypnose <em>avec moi</em>,
+nous faisons ensemble une première <em>séance ludique</em> pour le familiariser avec cet état et obtenir les outils dont nous avons besoin.
+</p>
+<p class=text-justify>
+Une fois familiarisé avec l'hypnose,
+le client est mis en transe pour que je puisse interroger son subconscient.
+Il ne s'agit pas de suggérer la disparition d'un symptôme sans en comprendre la cause,
+mais de trouver une résolution convenable à sa cause pour qu'il devienne inutile et puisse disparaître.
+Il arrive que l'on soit amené à <em>revivre des souvenirs traumatiques</em> et <em>libérer des émotions refoulées</em>:
+<strong class=notice>il ne s'agit pas de séances de relaxation</strong>.
+</p>
+<p class=text-justify>
+À chaque fin de séance,
+un temps est pris pour répondre aux questions et s'assurer que la personne est bien réveillée en repartant du cabinet.
+Il est recommandé de ne pas reprendre la route ou le travail dans la foulée,
+certaines séances pouvant être fatigantes et nécessiter de prendre un petit temps pour soi.
+</p>
+<p class=text-justify>
+L'hypnose est souvent présentée comme une thérapie un peu magique qui règle tous les soucis en deux séances,
+malheureusement <em>c'est une vision fausse</em> qui provoque chez les clients une attente irréaliste et de nombreuses déceptions.
+Le nombre de séances dépend de <em>la technique de l'hypnotiseur</em>,
+du <em>niveau de coopération</em> du sujet,
+mais aussi de <em>ce qui provoque la demande</em>:
+derrière une même phobie peuvent aussi bien se cacher <em>une seule ou plusieurs causes</em>
+chez deux personnes différentes.
+<em>Il n'y a pas de généralités mais uniquement du cas par cas</em>.
+</p>
+<p aria-hidden=true class=action-jumpNext>
+<a data-smooth-scroll href=#tarifs class="btn btn-xl btn-secondary">Tarifs</a>
+</p>
+</div>
+</div>
+</section>
+<section id=tarifs aria-labelledby=tarifs-title class=top-section>
+<div class=container>
+<div class=sub-container>
+<h2 id=tarifs-title class=text-center>Tarifs</h2>
+<span class=hz-separator></span>
+<p class=text-justify>
+Le <em>tarif normal</em> est de <em>60 EUR</em> pour la première séance et de <em>90 EUR</em> pour les séances suivantes.
+</p>
+<p class=text-justify>
+Le <em>tarif réduit</em> pour les <em>étudiants</em> et <em>personnes en situation précaire</em> est de <em>50 EUR</em> sur présentation d'un justificatif.
+</p>
+<p class=text-justify>
+Le règlement s'effectue <em>à chaque fin de séance</em>,
+de préférence par <em>carte bancaire</em>,
+mais également par <em>chèque</em> ou <em>espèces</em>.
+Des arrangements sont possibles pour différer l'encaissement des chèques.
+</p>
+<p class=text-justify>
+Une facture est disponible <em>pour chaque séance</em> et peut être envoyée par e-mail sur simple demande.
+</p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p class=text-justify>
+En échange d'une <em>autorisation de filmer</em>,
+je réalise des <strong class=notice>séances gratuitement</strong> et m'engage à l'écrit à ce que ne soient publiés que des extraits ne permettant pas l'identification du sujet.
+</p>
+<p class=text-justify>
+Ces séances sont strictement équivalentes aux séances payantes.
+</p>
+<p aria-hidden=true class=action-jumpNext>
+<a data-smooth-scroll href=#contact class="btn btn-xl btn-secondary">Contact</a>
+</p>
+</div>
+</div>
+</section>
+<section id=contact aria-labelledby=contact-title class=top-section>
+<div class=container>
+<div class=sub-container>
+<h2 id=contact-title class=text-center>Contact</h2>
+<span class=hz-separator></span>
+<p class=text-justify>
+La prise de rendez-vous se fait par <a class=p-tel href=tel:07.66.397.394>téléphone</a>,
+<a class=p-tel href=sms:07.66.397.394>texto</a> ou <a class=u-email href=mailto:gilles@hypno.cat>e-mail</a>.
+</p>
+<p class=text-justify>
+S'il s'agit d'une <em>première séance</em> avec moi,
+elle est <em>obligatoirement</em> précédée d'un entretien téléphonique <em>avec la personne concernée</em>.
+Durant cet échange,
+je m'assure que votre demande <em>entre dans mon champs de compétences</em>,
+que ma <em>méthodologie vous convient</em>,
+et je prends le temps de <em>répondre à toutes vos interrogations</em> pour pouvoir aborder la première séance sereinement.
+</p>
+<p class=text-justify>
+Les séances ont lieu au centre de bien-être <a href=https://www.facebook.com/lapepinieresweetdojo/ target=_blank><em>La Pépinière</em></a>.
+Dans <em>certains cas</em>,
+les séances peuvent avoir lieu en déplacement à domicile,
+cependant mon périmètre de mobilité est restreint à l'hyper-centre et à la moitié Ouest de l'île de Nantes entre République et le Hangar à Bananes.
+</p>
+<div class=location>
+<span class=location-address>
+<a href=https://www.facebook.com/lapepinieresweetdojo/ target=_blank><em>La Pépinière</em></a>,
+<span class=p-street-address>7 place des Enfants Nantais,</span>
+<span class=p-postal-code>44000</span> <span class=p-locality>Nantes</span>
+</span>
+<iframe height=400 frameborder=0 style=border:0 allowfullscreen aria-hidden=false tabindex=0 class=embedded-map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9199.840369957794!2d-1.5572093097959259!3d47.21721536905306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee93900e8d17%3A0xde27404835c5ebc!2s7%20Place%20des%20Enfants%20Nantais%2C%2044000%20Nantes!5e0!3m2!1sen!2sfr!4v1601072637997!5m2!1sen!2sfr"></iframe>
+</div>
+<div class="gallery text-center">
+<span class=gallery-entry>
+<a href=/img/photos/cab3.jpg data-caption="Vue salle d'attente" aria-label="Vue attente">
+<img class=thumbnail src=/img/photos/cab3.min.jpg alt>
+</a>
+</span>
+<span class=gallery-entry>
+<a href=/img/photos/cab1.jpg data-caption="Vue interieure cabinet" aria-label="Vue interieure 1">
+<img class=thumbnail src=/img/photos/cab1.min.jpg alt>
+</a>
+</span>
+<span class=gallery-entry>
+<a href=/img/photos/cab2.jpg data-caption="Vue interieure cabinet" aria-label="Vue interieure 2">
+<img class=thumbnail src=/img/photos/cab2.min.jpg alt>
+</a>
+</span>
+</div>
+<p class=text-justify>
+En cas d'annulation,
+merci de prévenir <em>au moins 48 heures</em> avant notre rendez-vous afin que je puisse réaffecter le créneau à une autre personne.
+Dans le cas contraire,
+je ne considèrerai pas la séance comme dûe,
+mais je refuserai de vous recevoir à l'avenir si l'annulation n'est pas justifiée.
+</p>
+<div class=action-contact>
+<div class="contact contact-phone">
+<i class="icon icon-phone"></i>
+<span class=sr-friendly>Téléphone</span>
+<a class=p-tel href=tel:07.66.397.394>07.66.397.394</a>
+</div>
+<div class="contact contact-mail">
+<i class="icon icon-mail"></i>
+<span class=sr-friendly>Mél</span>
+<a class=u-email href=mailto:gilles@hypno.cat>gilles@hypno.cat</a>
+</div>
+</div>
+<p aria-hidden=true class=action-jumpNext>
+<a data-smooth-scroll href=#parcours class="btn btn-xl btn-secondary">Parcours</a>
+</p>
+</div>
+</div>
+</section>
+<section id=parcours aria-labelledby=parcours-title class=top-section>
+<div class=container>
+<div class=sub-container>
+<h2 id=parcours-title class=text-center>Parcours</h2>
+<span class=hz-separator></span>
+<div class=cols-group>
+<div class=mugshot>
+<img height=224 width=175 src=/img/gilles.scaled.min.png alt="Photo de Gilles Chehade">
+</div>
+<div class=text-left>
+Mon parcours <em>relatif à l'hypnose</em> est le suivant:
+<ul>
+<li>2015 - Autodidacte</li>
+<li>2016 - Technicien en Hypnose Ericksonienne, <i>Psynapse</i></li>
+<li>2016 - Certification de compétence "Street Hypnose", <i>Street-Hypnose</i></li>
+<li>2016 - Certification de <a href=/files/psynapse_fr.pdf target=_blank>Praticien en Hypnose Ericksonienne</a>, <i>Psynapse</i></li>
+<li>2017 - Certification de compétence "Hypnose Générale", <i>Street-Hypnose</i></li>
+<li>2017 - Hypnose et douleurs, <i>Hunkaar</i></li>
+<li>2018 - Hypnose expérimentale, <i>Street-Hypnose</i></li>
+<li>2018-2019 - Formation à la communication avec l'inconscient, <i>Hunkaar</i></li>
+<li>2020 - Certification de <a href=/files/hunkaar.pdf target=_blank>Praticien en Hypnose "Hunkaar"</a>, <i>Hunkaar</i></li>
+<li>2021 - Stage d'hypnose ludique, <i><a href=https://www.nanteshypnose.fr/se-former-en-hypnose/ target=_blank>Nantes Hypnose</a></i></li>
+</ul>
+</div>
+</div>
+<p class=text-justify>
+Dans une optique d'<em>amélioration continue</em>,
+j'échange régulièrement avec différents praticiens pour <em>confronter nos pratiques</em>,
+que ce soit par des <em>discussions informelles</em> ou de <em>supervisions</em>.
+Je continue également à me former par le biais d'ouvrages et par l'analyse de techniques.
+</p>
+</div>
+</div>
+</section>
+</main><footer id=legal aria-label="Mentions légales">
+<div class=container>
+<span class=hz-separator></span>
+<p class=references>
+<a href=https://formations.hunkaar.fr/carte-hypnotherapeutes/ target=_blank>
+<span class=sr-friendly>Praticien certifié Hunkaar</span>
+<img src=/img/hunkaar.png alt height=80px>
+</a>
+<a href="https://ffhtb.fr/praticiens-certifies/?page=c" target=_blank>
+<span class=sr-friendly>Praticien certifié par la Fédération Française d’Hypnose et de Thérapie Brève</span>
+<img class=thumbnail src=/img/ffhtb.jpg alt height=80px>
+</a>
+<a href=https://psynapse.fr/ target=_blank>
+<span class=sr-friendly>Praticien certifié Psynapse</span>
+<img class=thumbnail src=/img/psynapse.png alt height=80px>
+</a>
+<a href=https://www.nanteshypnose.fr target=_blank>
+<span class=sr-friendly>Membre de l'association Nantes Hypnose</span>
+<img class=thumbnail src=/img/nantes-hypnose.png alt height=80px>
+</a>
+</p>
+<p class=text-left>
+<small>
+<br><em>SIRET:</em> 515 053 908 00031
+<br><em>Assurance Medinat:</em> MDNA25679
+</small>
+</p>
+</div>
+</footer>
+<script src=/js/home.min.js></script>
+<script src=/vendors/gumshoe.min.js async defer></script>
+<link rel=stylesheet type=text/css href=/vendors/baguetteBox.min.css>
+<script src=/vendors/baguetteBox.min.js async defer></script>
 </body>
 </html>
