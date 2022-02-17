@@ -1,0 +1,4 @@
+baseURL = "https://hypno.cat"
+languageCode = "fr"
+title = "hypno.cat"
+theme = "hypno.cat"
