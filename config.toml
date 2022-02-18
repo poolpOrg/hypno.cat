@@ -3,7 +3,7 @@ languageCode = "fr"
 title = "hypno.cat"
 theme = "hypno.cat"
 defaultContentLanguage = 'fr'
-
+publishDir = "docs"
 
 [languages]
   [languages.fr]
