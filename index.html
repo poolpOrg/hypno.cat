@@ -8,8 +8,11 @@
 <meta name=twitter:image content="/img/hypnocat.jpg">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel=stylesheet type=text/css>
 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel=stylesheet type=text/css>
+<link href=/css/bootstrap.min.css rel=stylesheet integrity=sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3 crossorigin=anonymous>
+<script src=/js/bootstrap.bundle.min.js integrity=sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p crossorigin=anonymous async defer></script>
 <link rel=stylesheet type=text/css href=/css/home.min.css>
-</head><body id=page-top><header id=top-header>
+</head>
+<body id=page-top><header id=top-header>
 <a data-smooth-scroll href=#main-content tabindex=1 class="sr-friendly focus-reveal">Aller au contenu</a>
 <div class=container>
 <h1 class=main-brand><a data-smooth-scroll href=#page-top>HYPNO.CAT</a></h1>
@@ -22,12 +25,12 @@
 <div class="nav-group sections">
 <span class="sr-friendly group-label">Sections</span>
 <ul class=naked-list>
-<li><a data-smooth-scroll class=nav-option href=#hypnose>Hypnose</a></li>
-<li><a data-smooth-scroll class=nav-option href=#indications>Indications</a></li>
-<li><a data-smooth-scroll class=nav-option href=#deroulement>Déroulement</a></li>
-<li><a data-smooth-scroll class=nav-option href=#tarifs>Tarifs</a></li>
-<li><a data-smooth-scroll class=nav-option href=#contact>Contact</a></li>
-<li><a data-smooth-scroll class=nav-option href=#parcours>Parcours</a></li>
+<li><a data-smooth-scroll class=nav-option href=#hypnose>hypnose</a></li>
+<li><a data-smooth-scroll class=nav-option href=#indications>indications</a></li>
+<li><a data-smooth-scroll class=nav-option href=#deroulement>déroulement</a></li>
+<li><a data-smooth-scroll class=nav-option href=#tarifs>tarif</a></li>
+<li><a data-smooth-scroll class=nav-option href=#contact>contact</a></li>
+<li><a data-smooth-scroll class=nav-option href=#parcours>parcours</a></li>
 </ul>
 </div>
 <div class="nav-group l10n">
@@ -198,35 +201,39 @@ que ma <em>méthodologie vous convient</em>,
 et je prends le temps de <em>répondre à toutes vos interrogations</em> pour pouvoir aborder la première séance sereinement.
 </p>
 <p class=text-justify>
-Les séances ont lieu au centre de bien-être <a href=https://www.facebook.com/lapepinieresweetdojo/ target=_blank><em>La Pépinière</em></a>.
+Les séances ont lieu au centre de bien-être <a href=https://www.facebook.com/lapepinierenantes target=_blank><em>La Pépinière</em></a>
+ou au centre de bien-être <a href=https://www.facebook.com/chezjoia.fr target=_blank><em>Chez Joïa</em></a>.
 Dans <em>certains cas</em>,
 les séances peuvent avoir lieu en déplacement à domicile,
-cependant mon périmètre de mobilité est restreint à l'hyper-centre et à la moitié Ouest de l'île de Nantes entre République et le Hangar à Bananes.
+mais je n'accepte qu'au cas par cas en fonction de la raison et un surcoût est à prévoir.
 </p>
-<div class=location>
-<span class=location-address>
-<a href=https://www.facebook.com/lapepinieresweetdojo/ target=_blank><em>La Pépinière</em></a>,
-<span class=p-street-address>7 place des Enfants Nantais,</span>
-<span class=p-postal-code>44000</span> <span class=p-locality>Nantes</span>
-</span>
-<iframe height=400 frameborder=0 style=border:0 allowfullscreen aria-hidden=false tabindex=0 class=embedded-map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9199.840369957794!2d-1.5572093097959259!3d47.21721536905306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee93900e8d17%3A0xde27404835c5ebc!2s7%20Place%20des%20Enfants%20Nantais%2C%2044000%20Nantes!5e0!3m2!1sen!2sfr!4v1601072637997!5m2!1sen!2sfr"></iframe>
+<div id=carouselExampleDark class="carousel carousel-dark slide carousel-fade" data-bs-ride=carousel>
+<div class=carousel-indicators>
+<button type=button data-bs-target=#carouselExampleDark data-bs-slide-to=0 class=active aria-current=true aria-label="Slide 1"></button>
+<button type=button data-bs-target=#carouselExampleDark data-bs-slide-to=1 aria-label="Slide 2"></button>
 </div>
-<div class="gallery text-center">
-<span class=gallery-entry>
-<a href=/img/photos/cab3.jpg data-caption="Vue salle d'attente" aria-label="Vue attente">
-<img class=thumbnail src=/img/photos/cab3.min.jpg alt>
-</a>
-</span>
-<span class=gallery-entry>
-<a href=/img/photos/cab1.jpg data-caption="Vue interieure cabinet" aria-label="Vue interieure 1">
-<img class=thumbnail src=/img/photos/cab1.min.jpg alt>
-</a>
-</span>
-<span class=gallery-entry>
-<a href=/img/photos/cab2.jpg data-caption="Vue interieure cabinet" aria-label="Vue interieure 2">
-<img class=thumbnail src=/img/photos/cab2.min.jpg alt>
-</a>
-</span>
+<div class=carousel-inner>
+<div class="carousel-item active" data-bs-interval=100000>
+<iframe height=400 frameborder=0 style=border:0 allowfullscreen aria-hidden=false tabindex=0 class=embedded-map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9199.840369957794!2d-1.5572093097959259!3d47.21721536905306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee93900e8d17%3A0xde27404835c5ebc!2s7%20Place%20des%20Enfants%20Nantais%2C%2044000%20Nantes!5e0!3m2!1sen!2sfr!4v1601072637997!5m2!1sen!2sfr"></iframe>
+<div class="carousel-caption d-none d-md-block">
+<h5><a href=https://www.facebook.com/lapepinierenantes target=_blank style=font-size:25px><em>La Pépinière</em></a></h5>
+</div>
+</div>
+<div class=carousel-item data-bs-interval=100000>
+<iframe height=400 frameborder=0 style=border:0 allowfullscreen aria-hidden=false tabindex=0 class=embedded-map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.732816159182!2d-1.6039440476702038!3d47.22180997905885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805edda4c263f49%3A0x4da268c8f48819ef!2s62%20Bd%20Jean%20Ingres%2C%2044100%20Nantes!5e0!3m2!1sen!2sfr!4v1645174305596!5m2!1sen!2sfr"></iframe>
+<div class="carousel-caption d-none d-md-block">
+<h5><a href=https://www.facebook.com/chezjoia.fr target=_blank style=font-size:25px><em>Chez Joïa</em></a></h5>
+</div>
+</div>
+</div>
+<button class=carousel-control-prev type=button data-bs-target=#carouselExampleDark data-bs-slide=prev>
+<span class=carousel-control-prev-icon aria-hidden=true></span>
+<span class=visually-hidden>Previous</span>
+</button>
+<button class=carousel-control-next type=button data-bs-target=#carouselExampleDark data-bs-slide=next>
+<span class=carousel-control-next-icon aria-hidden=true></span>
+<span class=visually-hidden>Next</span>
+</button>
 </div>
 <p class=text-justify>
 En cas d'annulation,
@@ -258,26 +265,85 @@ mais je refuserai de vous recevoir à l'avenir si l'annulation n'est pas justifi
 <div class=sub-container>
 <h2 id=parcours-title class=text-center>Parcours</h2>
 <span class=hz-separator></span>
+<p class=text-justify>
 <div class=cols-group>
 <div class=mugshot>
 <img height=224 width=175 src=/img/gilles.scaled.min.png alt="Photo de Gilles Chehade">
 </div>
-<div class=text-left>
-Mon parcours <em>relatif à l'hypnose</em> est le suivant:
-<ul>
-<li>2015 - Autodidacte</li>
-<li>2016 - Technicien en Hypnose Ericksonienne, <i>Psynapse</i></li>
-<li>2016 - Certification de compétence "Street Hypnose", <i>Street-Hypnose</i></li>
-<li>2016 - Certification de <a href=/files/psynapse_fr.pdf target=_blank>Praticien en Hypnose Ericksonienne</a>, <i>Psynapse</i></li>
-<li>2017 - Certification de compétence "Hypnose Générale", <i>Street-Hypnose</i></li>
-<li>2017 - Hypnose et douleurs, <i>Hunkaar</i></li>
-<li>2018 - Hypnose expérimentale, <i>Street-Hypnose</i></li>
-<li>2018-2019 - Formation à la communication avec l'inconscient, <i>Hunkaar</i></li>
-<li>2020 - Certification de <a href=/files/hunkaar.pdf target=_blank>Praticien en Hypnose "Hunkaar"</a>, <i>Hunkaar</i></li>
-<li>2021 - Stage d'hypnose ludique, <i><a href=https://www.nanteshypnose.fr/se-former-en-hypnose/ target=_blank>Nantes Hypnose</a></i></li>
-</ul>
+<ol class=list-group style=width:100%>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Autodidacte</div>
+Nantes
 </div>
+<span class="badge bg-primary rounded-pill">2015</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Technicien en Hypnose Ericksonienne</div>
+Psynapse, Rennes
 </div>
+<span class="badge bg-primary rounded-pill">2016</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Certification de compétence Street Hypnose</div>
+Street-Hypnose, Toulouse
+</div>
+<span class="badge bg-primary rounded-pill">2016</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Certification de Praticien en Hypnose Ericksonienne</div>
+Psynapse, Rennes
+</div>
+<span class="badge bg-primary rounded-pill">2016</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Certification de compétence Hypnose Générale</div>
+Street-Hypnose, Toulouse
+</div>
+<span class="badge bg-primary rounded-pill">2017</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Formation Hypnose et douleurs</div>
+Hunkaar, Toulouse
+</div>
+<span class="badge bg-primary rounded-pill">2017</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Formation Hypnose Expérimentale</div>
+Street-Hypnose, Toulouse
+</div>
+<span class="badge bg-primary rounded-pill">2018</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Formation à la communication avec l'inconscient</div>
+Hunkaar, Toulouse
+</div>
+<span class="badge bg-primary rounded-pill">2018-2019</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Certification de Praticien en Hypnose méthode Hunkaar</div>
+Hunkaar, Toulouse
+</div>
+<span class="badge bg-primary rounded-pill">2020</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div class="ms-2 me-auto">
+<div class=fw-bold>Stage d'hypnose ludique</div>
+Nantes-Hypnose, Nantes
+</div>
+<span class="badge bg-primary rounded-pill">2021</span>
+</li>
+</ol>
+</div>
+</p>
 <p class=text-justify>
 Dans une optique d'<em>amélioration continue</em>,
 j'échange régulièrement avec différents praticiens pour <em>confronter nos pratiques</em>,
