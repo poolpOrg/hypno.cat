@@ -1,7 +1,5 @@
 ---
 title: "Contact"
-date: 2022-02-21T23:59:08+01:00
-draft: true
 ---
 
 La prise de rendez-vous se fait par <a class="p-tel" href="tel:07.66.397.394">téléphone</a>,

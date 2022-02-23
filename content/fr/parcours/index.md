@@ -1,7 +1,5 @@
 ---
 title: "Parcours"
-date: 2022-02-21T23:59:35+01:00
-draft: true
 ---
 
 <ol class="list-group" style="width: 100%;">

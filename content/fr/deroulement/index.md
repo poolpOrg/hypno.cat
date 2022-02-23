@@ -1,7 +1,5 @@
 ---
 title: "Déroulement"
-date: 2022-02-21T23:58:03+01:00
-draft: true
 ---
 Si le client n'a jamais fait d'hypnose **avec moi**,
 nous faisons ensemble une première **séance ludique** pour le familiariser avec cet état et obtenir les outils dont nous avons besoin.

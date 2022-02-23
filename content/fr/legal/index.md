@@ -1,6 +1,5 @@
 ---
 title: "Mentions légales"
-date: 2022-02-22T00:20:56+01:00
 ---
 
 ### _Identification du professionnel:_

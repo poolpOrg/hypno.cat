@@ -1,6 +1,5 @@
 ---
 title: "L'hypnose, en quelques mots"
-date: 2022-02-21T23:47:05+01:00
 ---
 L'hypnose est un état **naturel** accessible à **TOUS** et que l'on peut **déclencher** chez un sujet **volontaire**.
 Le subconscient peut alors s'exprimer plus librement et

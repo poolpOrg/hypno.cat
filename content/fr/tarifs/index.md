@@ -1,7 +1,5 @@
 ---
 title: "Tarif"
-date: 2022-02-21T23:58:35+01:00
-draft: true
 ---
 
 Le **tarif unique** est de **90 EUR** par séance de 2 heures.

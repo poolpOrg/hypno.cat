@@ -1,6 +1,5 @@
 ---
 title: "Indications"
-date: 2022-02-21T23:57:24+01:00
 ---
 L'hypnose est indiquée pour la **déprogrammation de comportements**,
 la **libération d'émotions refoulées**,

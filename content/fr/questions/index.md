@@ -1,6 +1,5 @@
 ---
 title: "Questions"
-date: 2022-02-21T23:59:35+01:00
 ---
 
 ### _Tout le monde peut-il être hypnotisé ?_
