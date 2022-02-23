@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC);
+
+HTML {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+BODY {
+  font-family: Neucha, Merriweather;
+  font-size: 1.2rem;
+  margin: 0;
+  height: 100%;
+  font-weight: 400;
+  text-align: left;
+}
+
+HEADER {
+  margin: 0px;
+}
+
+FOOTER {
+  padding-top: 30px;
+  text-align: center;
+}
+
+STRONG {
+  font-weight: bolder;
+  color: #000000;
+  background-color: #f1e740;
+}
+
+P {
+  text-align: justify;
+}
+
+NAV {
+  display: block;
+  margin: 0px;
+}
+
+A {
+  background-color: transparent;
+  color: #f05f40;
+  transition: all 0.2s;
+}
+
+A:link {
+  text-decoration: none;
+}
+
+A:not([href^="#"]):visited {
+  color: #eb3812;
+}
+
+A:hover {
+  text-decoration: underline;
+}
+
+A:active {
+  color: #ee4b28;
+}
+
+A:focus {
+  text-decoration: underline;
+}
+
+
+IMG {
+  border-style: none;
+  vertical-align: middle;
+}
+
+EM {
+  font-weight: bolder;
+}
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+.text-left {
+  text-align: left; }
+
+.main-brand {
+  font-size: 32px;
+  margin-right: 50px;
+}
+
+.banner {
+  background-image: url("/img/hypnocat.png"), url("/img/paper-texture.jpg");
+  background-position: center, left;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  height: 128px;
+  margin-bottom: 25px;
+}
+
+.references {
+  text-align: center;
+  justify-content: space-evenly;
+}
+.references a {
+  margin: 5px 10px;
+}
+
+.hz-separator {
+  border: 0;
+  border-top: 3px solid #f05f40;
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 50px;
+}
+
+.embedded-map {
+  border: 10px solid #eb3812;
+}

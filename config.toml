@@ -1,12 +1,18 @@
-baseURL = "https://hypno.cat"
-languageCode = "fr"
-title = "hypno.cat"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
 theme = "hypno.cat"
-defaultContentLanguage = 'fr'
-publishDir = "docs"
+defaultContentLanguage = "fr"
+
+[markup.goldmark.renderer]
+unsafe = true
 
 [languages]
   [languages.fr]
-    weight = 1
-    languageName = 'Français'
     contentDir = 'content/fr'
+    languageName = 'Français'
+    weight = 1
+  [languages.cat]
+    contentDir = 'content/cat'
+    languageName = 'Català'
+    weight = 2

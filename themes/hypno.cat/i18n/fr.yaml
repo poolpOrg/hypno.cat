@@ -8,10 +8,13 @@
   translation: "déroulement"
 
 - id: rate
-  translation: "tarif"
+  translation: "tarifs"
 
 - id: contact
   translation: "contact"
 
 - id: journey
   translation: "parcours"
+
+- id: faq
+  translation: "questions"

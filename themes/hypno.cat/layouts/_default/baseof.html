@@ -1,16 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.LanguageCode }}">
     {{- partial "head.html" . -}}
-    <body id="page-top">
+    <body>
         {{- partial "header.html" . -}}
-
-        <div id="hero" aria-hidden="true">
-            <p aria-hidden="true" class="action-jumpNext">
-              <a data-smooth-scroll href="#hypnose" class="btn btn-xl btn-primary">Entrer</a>
-            </p>
-        </div>
-
-        <main id="main-content">
+        <main id="content">
         {{- block "main" . }}{{- end }}
         </main>
         {{- partial "footer.html" . -}}

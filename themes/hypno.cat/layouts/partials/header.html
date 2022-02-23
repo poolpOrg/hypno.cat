@@ -1,45 +1,62 @@
 <header id="top-header">
-    <a data-smooth-scroll href="#main-content" tabindex="1" class="sr-friendly focus-reveal">Aller au contenu</a>
-
-    <div class="container">
-      <h1 class="main-brand"><a data-smooth-scroll href="#page-top">HYPNO.CAT</a></h1>
-
-      <nav role="navigation">
-        <button type="button" class="foldable-toggle" aria-controls="main-nav" aria-expanded="false">
-          <i aria-hidden="true" class="icon icon-bars"></i>
-          <span class="sr-friendly">Navigation</span>
-        </button>
-        <div id="main-nav" class="foldable-element foldable-ephemeral">
-          <div class="nav-group sections">
-            <span class="sr-friendly group-label">Sections</span>
-            <ul class="naked-list">
-              <li><a data-smooth-scroll class="nav-option" href="#hypnose">{{i18n "hypnosis"}}</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#indications">{{i18n "indications"}}</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#deroulement">{{i18n "progress" }}</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#tarifs">{{i18n "rate" }}</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#contact">{{i18n "contact" }}</a></li>
-              <li><a data-smooth-scroll class="nav-option" href="#parcours">{{i18n "journey" }}</a></li>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <h1 class="main-brand"><a href="/">HYPNO.CAT</a></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/hypnose">{{i18n "hypnosis"}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/indications">{{i18n "indications"}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/deroulement">{{i18n "progress"}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/tarifs">{{i18n "rate"}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">{{i18n "contact"}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/parcours">{{i18n "journey"}}</a>
+              </li>
               <!--
-              <li><a data-smooth-scroll class="nav-option" href="#questions">Questions</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">{{i18n "questions"}}</a>
+              </li>
+              -->
+              <!--
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
               -->
             </ul>
-          </div>
-          <div class="nav-group l10n">
-            <span class="sr-friendly group-label">Langues</span>
-            <ul class="naked-list">
-            <!--
-              links to other localizations
-              - `lang` attribute states the locale for the link label
-              - `hreflang` attribute states the locale of target page
-            -->
-              <!--
-              <li><a lang="fr" hreflang="fr" class="nav-option" href="">Français</a></li>
-              -->
-              <li class="active"><span class="nav-option">Français</span></li>
-              <li><a lang="ca" hreflang="ca" class="nav-option" href="/catala">Català</a></li>
-            </ul>
+            <div class="d-flex">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Français</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cat/">Català</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
-    </div>
-  </header>
+      <div class="banner">
+      </div>
+</header>
