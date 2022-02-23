@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://hypno.cat"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "hypno.cat"
 theme = "hypno.cat"
 defaultContentLanguage = "fr"
 
