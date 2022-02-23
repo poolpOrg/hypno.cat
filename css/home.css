@@ -1,4 +1,6 @@
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC);
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
@@ -291,7 +293,7 @@ section h2 {
   [aria-controls="main-nav"][aria-expanded="true"] {
     background-color: #f2f2f2; }
   [aria-controls="main-nav"] .icon-bars {
-    background: url("../img/icons_sheet.svg") 0px 0 / 64.28571px 20px no-repeat;
+    background: url("/img/icons_sheet.svg") 0px 0 / 64.28571px 20px no-repeat;
     height: 20px;
     width: 20px; }
 
@@ -373,8 +375,15 @@ section h2 {
   #top-header .sr-friendly.focus-reveal:focus {
     top: 3.35rem; } }
 
+#banner {
+  background-image: url("/img/hypnocat.png"), url("/img/paper-texture.jpg");
+  background-position: center, left;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  height: 256px; }
+
 #hero {
-  background-image: url("../img/hypnocat.png"), url("../img/paper-texture.jpg");
+  background-image: url("/img/hypnocat.png"), url("/img/paper-texture.jpg");
   background-position: center, left;
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
@@ -414,9 +423,9 @@ section h2 {
     margin-right: 0.5rem;
     width: 24px; }
   .contact .icon-phone {
-    background: url("../img/icons_sheet.svg") -51.42857px 0 / 77.14286px 24px no-repeat; }
+    background: url("/img/icons_sheet.svg") -51.42857px 0 / 77.14286px 24px no-repeat; }
   .contact .icon-mail {
-    background: url("../img/icons_sheet.svg") -25.71429px 0 / 77.14286px 24px no-repeat; }
+    background: url("/img/icons_sheet.svg") -25.71429px 0 / 77.14286px 24px no-repeat; }
 
 .action-contact {
   display: flex;
@@ -457,9 +466,9 @@ section h2 {
     height: 32px;
     width: 32px; }
   .contact .icon-phone {
-    background: url("../img/icons_sheet.svg") -68.57143px 0 / 102.85714px 32px no-repeat; }
+    background: url("/img/icons_sheet.svg") -68.57143px 0 / 102.85714px 32px no-repeat; }
   .contact .icon-mail {
-    background: url("../img/icons_sheet.svg") -34.28571px 0 / 102.85714px 32px no-repeat; } }
+    background: url("/img/icons_sheet.svg") -34.28571px 0 / 102.85714px 32px no-repeat; } }
 
 .mugshot {
   margin-right: 1.25rem; }
@@ -482,7 +491,7 @@ section h2 {
     margin: 5px 10px; }
 
 #bottom-image {
-  background-image: url("../img/hypnocat.png");
+  background-image: url("/img/hypnocat.png");
   background-size: contain;
   bottom: 0.5rem;
   height: 150px;
