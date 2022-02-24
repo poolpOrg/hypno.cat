@@ -4,7 +4,7 @@ title: "Ateliers"
 
 J'organise des ateliers de découverte et de perfectionnement de l'hypnose,
 à raison d'un atelier de chaque sorte par trimestre,
-se déroulant systématiquement durant les week-ends.
+se déroulant durant les week-ends.
 
 Pour être informé des dates de tenue des prochains ateliers,
 n'hésitez pas à me contacter par e-mail en écrivant à gilles@hypno.cat
