@@ -16,3 +16,6 @@ unsafe = true
     contentDir = 'content/cat'
     languageName = 'Català'
     weight = 2
+
+[permalinks]
+	posts = "/posts/:year-:month-:day/:slug"
