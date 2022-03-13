@@ -266,7 +266,7 @@ Si elle s'était tenue à la promesse d'une résolution de sa phobie en deux sé
 elle se serait arrêté sur la déception d'un outil magique qui ne marche finalement pas,
 alors que **ses premiers progrès notables sont survenus seulement quelques séances plus tard** et l'ont motivés à continuer bien **au delà de sa demande initiale concernant la phobie**.
 
-Attention aux vendeurs de rêve,
+Attention aux promesses trop alléchantes,
 lorsque l'on vous promet des résultats avec un nombre de séance prédéfini concernant une problématique d'ordre psychologique,
 il y a **toujours anguille sous roche**:
 nous sommes tous différents,
