@@ -277,7 +277,7 @@ la même envie de fumer,
 la même envie de grignoter,
 peuvent se cacher une multitude de causes plus ou moins complexes et plus ou moins difficiles à travailler selon les personnes.
 Certains verront leur problématique disparaître en une séance,
-et c'est toujours génial dans ce cas là,
+et c'est génial dans ce cas là,
 mais d'autres découvriront qu'il y a des blessures insoupçonnées et qu'elles **ne disparaissent pas en un coup de baguette**.
 
 <br />
