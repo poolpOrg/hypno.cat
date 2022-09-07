@@ -70,7 +70,7 @@ enableInlineShortcodes = true
     weight = 9
 
   [[menu.main]]
-    name = "[CAT"
+    name = "[CAT]"
     url = "/cat"
     weight = 100
 
