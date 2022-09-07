@@ -12,7 +12,7 @@
 #Details for the box below the banner
 [services]
   title = "Consultations au cabinet"
-  text = "<img width=200px src='/img/hypnocat.png'/><br />Rendez-vous les Jeudi de 9h à 16h au [7 place des Enfants Nantais, 44000 Nantes](https://www.openstreetmap.org/node/1716156816)."
+  text = "<img width=200px src='/img/hypnocat.png'/><br /><br />Rendez-vous les Jeudi de 9h à 16h au [7 place des Enfants Nantais, 44000 Nantes](https://www.openstreetmap.org/node/1716156816)."
   map_location = "Centre de bien-être de La pépinière"
 
 [feature_icons]
