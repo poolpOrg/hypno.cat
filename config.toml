@@ -1,21 +1,147 @@
-baseURL = "https://hypno.cat"
+baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "hypno.cat"
-theme = "hypno.cat"
-defaultContentLanguage = "fr"
+theme = "alpha-church"
+
+rssLimit = 5
+paginate = 4
+
+enableEmoji = true
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+enableInlineShortcodes = true
 
 [markup.goldmark.renderer]
-unsafe = true
+  unsafe = true
 
-[languages]
-  [languages.fr]
-    contentDir = 'content/fr'
-    languageName = 'Français'
+[taxonomies]
+  tag = "tags"
+  preacher = "preachers"
+  series = "series"
+
+#This theme can generate a multi-level menu.
+#Use weight= to specify the order of menu items, and parent= to create a submenu item.
+[menu]
+  [[menu.main]]
+    name = "Accueil"
+    url = "/"
     weight = 1
-  [languages.cat]
-    contentDir = 'content/cat'
-    languageName = 'Català'
+
+  [[menu.main]]
+    name = "Hypnose"
+    url = "/hypnose"
     weight = 2
 
-[permalinks]
-	posts = "/posts/:year-:month-:day/:slug"
+  [[menu.main]]
+    name = "Indications"
+    url = "/indications"
+    weight = 3
+
+  [[menu.main]]
+    name = "Déroulement"
+    url = "/deroulement"
+    weight = 4
+
+  [[menu.main]]
+    name = "Tarif"
+    url = "/tarif"
+    weight = 5
+
+  [[menu.main]]
+    name = "Parcours"
+    url = "/parcours"
+    weight = 6
+
+  [[menu.main]]
+    name = "Questions"
+    url = "/faq"
+    weight = 7
+
+  [[menu.main]]
+    name = "Podcasts"
+    url = "/podcast"
+    weight = 8
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 9
+
+  [[menu.main]]
+    name = "[CAT"
+    url = "/cat"
+    weight = 100
+
+# Paramaters for the whole site
+[params]
+  title = "hypno.cat"
+  subtitle = "Cabinet d'hypnose"
+  author = "Gilles Chehade"
+  keywords = ["theme", "hugo", "podcast"]
+  languageCode = "fr"
+  #bible_popups = "faithlife" #faithlife, blb
+  #bible_version = "CSB" #HCSB, NIV, NLT, ESV, etc.
+  instant_page = true
+
+  customCSS = ["example.css"]
+
+  [params.favicon]
+    sml = "/example16.png"
+    med = "/example32.png"
+    #lge = "example96.png"
+
+  [params.banner]
+    image = "img/pepiniere.jpeg"
+
+  [params.podcast]
+    title = "Listen to Alpha Church"
+    summary = "Alpha-Church sermons, talks, messages—podcasted."
+    email = "test@example.com"
+    copyright = "The files in the podcast are in the public domain."
+    image = "img/podcast-cover.jpg"
+    category = "Religion & Spirituality"
+    sub_category = "Christianity"
+    iTunes = "https://itunes.apple.com/us/podcast/tgc-word-of-the-week/id1034013280"
+    feed = "https://www.thegospelcoalition.org/podcasts/word-of-the-week/feed/?feed=podcast"
+    spotify = "https://open.spotify.com/show/1iE3aJkf8fJ2FVTvJGFd4h"
+
+  [params.map]
+    service = "osm" #"osm" for OpenStreetMaps, "google" for Google Maps, or "mapbox" for Mapbox, see SETUP.md
+    # For Open Street Map widgets
+    latitude = "47.2289852"
+    longitude = "-1.5432098"
+    zoom = "18"
+
+  [params.contact]
+    text = "Mes coordonnées:"
+    phone = "07.66.397.394"
+    mail = "gilles@hypno.cat"
+
+    [params.footer]
+      copyright = [ "[Mentions légales](/legal)" ]
+
+    [[params.links]]
+      service = "Twitter"
+      icon = "fa-twitter"
+      icon_pack = "fab"
+      link = "//twitter.com/TheHypnoCat"
+
+    [[params.links]]
+      service = "Facebook"
+      icon = "fa-facebook"
+      icon_pack = "fab"
+      link = "//www.facebook.com/hypnodotcat"
+
+    [[params.links]]
+      service = "Podcast"
+      icon = "fa-podcast"
+      icon_pack = "fas"
+      link = "//youtube.com/playlist?list=PLPkj9YHXkB0F9pP84ikyazYssqVIw5r65"
+
+#    [[params.links]]
+#      service = "Full RSS Feed"
+#      icon = "fa-rss"
+#      icon_pack = "fas"
+#      link = "/index.xml"
