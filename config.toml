@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "hypno.cat"
-theme = "alpha-church"
+theme = "hypno.cat"
 
 rssLimit = 5
 paginate = 4
