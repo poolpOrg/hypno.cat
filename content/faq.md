@@ -116,11 +116,13 @@ soit parce que la problématique dépend de facteurs sur lesquels l'hypnose n'a 
 On peut tout à fait s'hypnotiser soi-même mais avec certaines limitations.
 
 Tout d'abord,
-il est difficile de travailler un sujet traumatique en auto-hypnose car il faut faire baisser son niveau de conscience pour accéder aux traumas,
+il est difficile de travailler un sujet traumatique en auto-hypnose car il faut parvenir à baisser son niveau de conscience pour pouvoir accéder aux traumas,
 mais conduire la séance nécessite d'être relativement conscient.
 L'auto-hypnose reste une hypnose relativement superficielle,
 idéale pour se détendre ou questionner son subconscient sur des questions sans enjeu,
-mais limitée dès lors qu'il s'agit d'explorer plus en profondeur.
+potentiellement pour libérer certaines émotions chez les plus entrainés,
+mais néanmoins limitée dès lors qu'il s'agit d'aller explorer un sujet en profondeur.
+
 
 <span class="hz-separator"></span>
 
@@ -201,5 +203,5 @@ mais le souvenir de la séance revient instantanément dès qu'il leur est sugg�
 
 Personnellement,
 lorsque le client est revenu à lui en fin de séance,
-je suggère que tous ce qui ne nuira pas au travail remonte instantanément pour qu'il n'y ait pas de zone d'ombre.
+je suggère que tout ce qui ne nuira pas au travail remonte instantanément pour qu'il n'y ait pas de zone d'ombre.
 
