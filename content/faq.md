@@ -15,6 +15,35 @@ Une fois acquis,
 l'état d'hypnose est appris définitivement,
 il suffit de vouloir entrer en hypnose pour retrouver l'état rapidement même lorsque l'on n'a pas été hypnotisé depuis des années.
 
+
+### _Est-ce qu'il faut y croire pour que ça fonctionne ?_
+**Non**, c'est un mythe qui a la dent dure mais **il n'est absolument pas nécessaire** d'y croire pour que ça fonctionne.
+
+Tout d'abord,
+il faut comprendre que l'état d'hypnose est un état naturel observable et mesurable qui est tout aussi réel et concret que l'état d'éveil ou que les différents états de sommeil.
+De la même manière qu'il serait absurde de se demander s'il est nécessaire de croire au sommeil pour qu'il fonctionne,
+il n'est pas moins absurde de penser qu'il faut croire à l'hypnose qu'elle fonctionne.
+L'état d'hypnose ne se soucie pas des croyances individuelles pour exister objectivement.
+
+
+En revanche,
+ce qui est vrai c'est que contrairement à un état d'hypnose naturel qui se déclencherai spontanément par les aléas de la vie sans que le sujet ne le voit venir,
+celui provoquée par l'hypnotiseur est un état d'hypnose que l'on cherche à déclencher artificiellement sur un sujet qui sait ce qu'il est censé se produire et qui peut y opposer une résistance,
+consciemment ou non.
+Il est donc nécessaire d'avoir **l'engagement** de ce volontaire,
+c'est à dire une véritable volonté de **vouloir que ça fonctionne** et de **vouloir vivre cet état même si l'on ne croit pas qu'on y arrivera ou qu'il existe**.
+
+Il est très fréquent que des personnes qui n'y croient pas du tout,
+ou qui doutent de leur propre aptitude,
+parviennent à vivre des phénomènes impressionnants parce qu'ils se sont engagés avec une curiosité sincère dans la démarche et ont suivi toutes les instructions avec une volonté réelle de voir ce qu'il adviendra...
+tout comme il est fréquent que des gens qui se pensent eux-mêmes "réceptifs",
+et qui croient dur comme fer à l'hypnose,
+éprouvent des difficultés à vivre un état d'hypnose parce qu'elles ne sont pas certaines de vouloir vraiment vivre l'état en raison de ce qu'elles pourraient y dire ou y faire.
+
+La clé n'est pas de croire mais de vouloir sincèrement que ça fonctionne pour pouvoir suivre les instructions avec un engagement total.
+
+
+
 <span class="hz-separator"></span>
 
 ### _Combien de séances d'hypnose faut-il ?_
