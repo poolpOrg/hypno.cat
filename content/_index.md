@@ -104,6 +104,13 @@
     url = "/podcast/episode-002"
     button_text="Accéder à l'épisode"
 
+  [[feature_images.tile]]
+    image = "https://i9.ytimg.com/vi/GgybeD9mfF4/mqdefault.jpg?v=63483ec6&sqp=CIyBoZoG&rs=AOn4CLDWPVJPrev3Snk_XLpgaBtY4XiK_A"
+    title = "03 - Perception de la réalité"
+    text = ""
+    url = "/podcast/episode-003"
+    button_text="Accéder à l'épisode"
+
 [CTA]
   heading = "Contact"
   message = "N'hésitez pas à me contacter pour obtenir plus d'informations !"
