@@ -105,7 +105,7 @@ enableInlineShortcodes = true
     sub_category = "Mental Health"
     #iTunes = "https://itunes.apple.com/us/podcast/tgc-word-of-the-week/id1034013280"
     #feed = "https://www.thegospelcoalition.org/podcasts/word-of-the-week/feed/?feed=podcast"
-    #spotify = "https://open.spotify.com/show/1iE3aJkf8fJ2FVTvJGFd4h"
+    spotify = "https://open.spotify.com/show/4mK3yKocxVTSso2fmICgDz"
 
   [params.map]
     service = "osm" #"osm" for OpenStreetMaps, "google" for Google Maps, or "mapbox" for Mapbox, see SETUP.md
