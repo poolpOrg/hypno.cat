@@ -3,23 +3,23 @@
 		<section id="main" class="container">
 			<header>
 				<h2>{{ .Title | title }}</h2>
-				{{ if (.Site.Params.Podcast.feed) }}
 					<ul class="icons">
+						{{ if (.Site.Params.Podcast.google) }}
 						<li>
-							<a href="https://subscribeonandroid.com/{{ index (split .Site.Params.Podcast.feed "://") 1 }}" target="_blank"><i class="icon fab fa-android"><span class="label">Subscribe on Android</span></i>Subscribe on Android</a>
+							<a href="{{ .Site.Params.Podcast.google }}" target="_blank"><i class="icon fab fa-android"><span class="label">S'abonner sur Google Podcasts</span></i>S'abonner sur Google Podcasts</a>
 						</li>
+						{{ end }}
 						{{ if (.Site.Params.Podcast.itunes ) }}
 							<li>
-								<a href="{{ .Site.Params.Podcast.iTunes }}" target="_blank"><i class="icon fab fa-apple"><span class="label">Subscribe on Apple Podcasts</span></i>Subscribe on Apple Podcasts</a>
+								<a href="{{ .Site.Params.Podcast.iTunes }}" target="_blank"><i class="icon fab fa-apple"><span class="label">S'abonner sur Apple Podcasts</span></i> S'abonner sur Apple Podcasts</a>
 							</li>
 						{{ end }}
 						{{ if (.Site.Params.Podcast.spotify ) }}
 							<li>
-								<a href="{{ .Site.Params.Podcast.spotify }}" target="_blank"><i class="icon fab fa-spotify"><span class="label">Subscribe on Spotify</span></i>Subscribe on Spotify</a>
+								<a href="{{ .Site.Params.Podcast.spotify }}" target="_blank"><i class="icon fab fa-spotify"><span class="label">S'abonner sur Spotify</span></i> S'abonner sur Spotify</a>
 							</li>
 						{{ end }}
 					</ul>
-				{{ end }}
 			</header>
 			{{ partial "listbody" . }}
 	</section>
