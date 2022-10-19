@@ -1,6 +1,6 @@
 ---
 date: 2022-08-31 00:00:00
-title: "Pendule & Pyjama: psychologie de l'hypnose"
+title: "Pendule et Pyjama: psychologie de l'hypnose"
 passage: ""
 audio: ["/podcast/episode-002/episode-002.mp3"]
 audio_duration: 40:34

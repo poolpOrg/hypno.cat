@@ -1,6 +1,6 @@
 ---
 date: 2022-10-13 00:00:00
-title: "Pendule & Pyjama: perception de la réalité"
+title: "Pendule et Pyjama: perception de la réalité"
 passage: ""
 audio: ["/podcast/episode-003/episode-003.mp3"]
 audio_duration: 30:51

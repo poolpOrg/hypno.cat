@@ -1,6 +1,6 @@
 ---
 date: 2022-08-10 00:00:00
-title: "Pendule & Pyjama: présentation du podcast"
+title: "Pendule et Pyjama: présentation du podcast"
 passage: ""
 audio: ["/podcast/episode-001/episode-001.mp3"]
 audio_duration: 13:38
