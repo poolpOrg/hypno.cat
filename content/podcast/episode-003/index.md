@@ -5,17 +5,12 @@ passage: ""
 audio: ["episode-003.mp3"]
 audio_duration: 30:51
 audio_size: 37036324
-images: []
+images: ["cover.png"]
 preachers: ["Gilles Chehade"]
 series: ["Hypnose"]
 tags: ["hypnose"]
 draft: false
 ---
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GgybeD9mfF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-<hr/>
-
-Transcription en cours
-
+Dans ce troisième épisode,
+je parle de la perception de la réalité au travers de la réalité physique et des réalités individuelles subjectives,
+mais aussi des réalités alternatives et de leur lien avec l'hypnose et le rêve.

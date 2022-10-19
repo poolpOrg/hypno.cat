@@ -30,7 +30,7 @@
 								{{ end }} {{/* range .Params.audio */}}
 							{{ .Content }}
 							{{ if .Params.preachers }}
-								<p>Preacher:
+								<p>Auteur:
 									{{ range $index, $key := .Params.preachers }}
 									{{ if $index }}, {{ end }}
 									{{ if gt (len $key) 0 }}
@@ -39,7 +39,7 @@
 									{{ end }} {{/* range */}}
 							{{ end }} {{/* end if preachers */}}
 							{{ if .Params.series }}
-								<p> Series:
+								<p> Serie:
 									{{ range $index, $key := .Params.series }}
 									{{ if $index }}, {{ end }}
 									{{ if gt (len $key) 0 }}
@@ -49,7 +49,7 @@
 								</p>
 							{{ end }} {{/* end if series */}}
 							{{ if .Params.tags }}
-								<p>Topics:
+								<p>Sujet:
 									{{ range $index, $key:= .Params.tags }}
 										{{ if $index }}, {{ end }}
 										{{ if gt (len $key) 0 }}

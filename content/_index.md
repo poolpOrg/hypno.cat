@@ -91,21 +91,21 @@
   enable = true
 
   [[feature_images.tile]]
-    image = "https://i.ytimg.com/vi/r5zG-0J4h_c/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBCZsPdU0uPrrKOTv9uMn_JphPIJg"
+    image = "/podcast/episode-001/cover.png"
     title = "01 - Présentation du podcast"
     text = ""
     url = "/podcast/episode-001"
     button_text="Accéder à l'épisode"
 
   [[feature_images.tile]]
-    image = "https://i.ytimg.com/vi/-q-PsMYuNQo/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDS2XMK6GebpgsRh9IiBL97ynn4ZAg"
+    image = "/podcast/episode-002/cover.png"
     title = "02 - Psychologie de l'hypnose"
     text = ""
     url = "/podcast/episode-002"
     button_text="Accéder à l'épisode"
 
   [[feature_images.tile]]
-    image = "https://i9.ytimg.com/vi/GgybeD9mfF4/mqdefault.jpg?v=63483ec6&sqp=CIyBoZoG&rs=AOn4CLDWPVJPrev3Snk_XLpgaBtY4XiK_A"
+    image = "/podcast/episode-003/cover.png"
     title = "03 - Perception de la réalité"
     text = ""
     url = "/podcast/episode-003"

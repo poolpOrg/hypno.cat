@@ -5,17 +5,11 @@ passage: ""
 audio: ["episode-002.mp3"]
 audio_duration: 40:34
 audio_size: 48697385
-images: []
+images: ["cover.png"]
 preachers: ["Gilles Chehade"]
 series: ["Hypnose"]
 tags: ["hypnose"]
 draft: false
 ---
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-q-PsMYuNQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-<hr/>
-
-Transcription en cours
-
+Dans ce second épisode,
+j'aborde les différentes notions de psychologie cognitive qui seront utilisées tout au long des futurs épisodes.

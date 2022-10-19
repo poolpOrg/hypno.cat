@@ -96,16 +96,16 @@ enableInlineShortcodes = true
     image = "img/pepiniere.jpeg"
 
   [params.podcast]
-    title = "Listen to Alpha Church"
-    summary = "Alpha-Church sermons, talks, messages—podcasted."
-    email = "test@example.com"
-    copyright = "The files in the podcast are in the public domain."
-    image = "img/podcast-cover.jpg"
-    category = "Religion & Spirituality"
-    sub_category = "Christianity"
-    iTunes = "https://itunes.apple.com/us/podcast/tgc-word-of-the-week/id1034013280"
-    feed = "https://www.thegospelcoalition.org/podcasts/word-of-the-week/feed/?feed=podcast"
-    spotify = "https://open.spotify.com/show/1iE3aJkf8fJ2FVTvJGFd4h"
+    title = "Pendule et Pyjama"
+    summary = "Hypnose et rêve, comment ça marche."
+    email = "gilles@hypno.cat"
+    copyright = "Gilles Chehade"
+    image = "img/pendule-et-pyjama.png"
+    category = "Health & Fitness"
+    sub_category = "Mental Health"
+    #iTunes = "https://itunes.apple.com/us/podcast/tgc-word-of-the-week/id1034013280"
+    #feed = "https://www.thegospelcoalition.org/podcasts/word-of-the-week/feed/?feed=podcast"
+    #spotify = "https://open.spotify.com/show/1iE3aJkf8fJ2FVTvJGFd4h"
 
   [params.map]
     service = "osm" #"osm" for OpenStreetMaps, "google" for Google Maps, or "mapbox" for Mapbox, see SETUP.md
@@ -138,7 +138,7 @@ enableInlineShortcodes = true
       service = "Podcast"
       icon = "fa-podcast"
       icon_pack = "fas"
-      link = "//youtube.com/playlist?list=PLPkj9YHXkB0F9pP84ikyazYssqVIw5r65"
+      link = "index.xml"
 
 #    [[params.links]]
 #      service = "Full RSS Feed"
