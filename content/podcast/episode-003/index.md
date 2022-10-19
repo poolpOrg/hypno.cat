@@ -5,7 +5,7 @@ passage: ""
 audio: ["episode-003.mp3"]
 audio_duration: 30:51
 audio_size: 37036324
-images: ["cover.png"]
+images: ["/podcast/episode-003/cover.png"]
 preachers: ["Gilles Chehade"]
 series: ["Hypnose"]
 tags: ["hypnose"]
