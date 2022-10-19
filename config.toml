@@ -103,7 +103,7 @@ enableInlineShortcodes = true
     image = "img/pendule-et-pyjama.png"
     category = "Health & Fitness"
     sub_category = "Mental Health"
-    #iTunes = "https://itunes.apple.com/us/podcast/tgc-word-of-the-week/id1034013280"
+    iTunes = "https://podcasts.apple.com/us/podcast/pendule-et-pyjama/id1650535654"
     #feed = "https://www.thegospelcoalition.org/podcasts/word-of-the-week/feed/?feed=podcast"
     spotify = "https://open.spotify.com/show/4mK3yKocxVTSso2fmICgDz"
 
