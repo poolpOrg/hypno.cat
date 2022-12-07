@@ -18,8 +18,7 @@ je m'assure que votre demande <em>entre dans mon champs de compétences</em>,
 que ma <em>méthodologie vous convient</em>,
 et je prends le temps de <em>répondre à toutes vos interrogations</em> pour pouvoir aborder la première séance sereinement.
 
-Les séances ont lieu au centre de bien-être <a href="https://www.facebook.com/lapepinierenantes" target="_blank"><em>La Pépinière</em></a>
-ou au centre de bien-être <a href="https://www.facebook.com/chezjoia.fr" target="_blank"><em>Chez Joïa</em></a>.
+Les séances ont lieu au centre de bien-être <a href="https://www.facebook.com/lapepinierenantes" target="_blank"><em>La Pépinière</em></a>.
 Dans <em>certains cas</em>,
 les séances peuvent avoir lieu en déplacement à domicile,
 mais je n'accepte qu'au cas par cas en fonction de la raison et un surcoût est à prévoir.
@@ -34,11 +33,6 @@ mais je refuserai de vous recevoir à l'avenir si l'annulation n'est pas justifi
 
 <a href="https://www.facebook.com/lapepinierenantes" target="_blank"><em>La Pépinière</em>, 7 Place des Enfants Nantais, 44000 Nantes</a>
 <iframe width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9199.840369957794!2d-1.5572093097959259!3d47.21721536905306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee93900e8d17%3A0xde27404835c5ebc!2s7%20Place%20des%20Enfants%20Nantais%2C%2044000%20Nantes!5e0!3m2!1sen!2sfr!4v1601072637997!5m2!1sen!2sfr"></iframe>
-
-<span class="hz-separator"></span>
-
-<a href="https://www.facebook.com/chezjoia.fr" target="_blank"><em>Chez Joïa</em>, 62 Boulevard Jean Ingres, 44100 Nantes</a>
-<iframe width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.732816159182!2d-1.6039440476702038!3d47.22180997905885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805edda4c263f49%3A0x4da268c8f48819ef!2s62%20Bd%20Jean%20Ingres%2C%2044100%20Nantes!5e0!3m2!1sen!2sfr!4v1645174305596!5m2!1sen!2sfr"></iframe>
 
 
 {{< contact.inline >}}{{ partial "contact" . }}{{< /contact.inline >}}
