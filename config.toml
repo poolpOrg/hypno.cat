@@ -39,10 +39,6 @@ enableInlineShortcodes = true
     url = "/indications"
     weight = 3
 
-  [[menu.main]]
-    name = "Déroulement"
-    url = "/deroulement"
-    weight = 4
 
   [[menu.main]]
     name = "Tarif"

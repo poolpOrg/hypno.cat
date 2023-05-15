@@ -1,18 +1,14 @@
 +++
 [banner]
   [[banner.button]]
-      url = "/contact"
-      text = "Prendre RDV"
-      type = "primary"
-
-  [[banner.button]]
       url = "#feature-icons"
       text = "En savoir plus"
+      type = "primary"
 
 #Details for the box below the banner
 [services]
   title = "Consultations au cabinet"
-  text = "<img width=200px src='/img/hypnocat.png'/><br /><br />Rendez-vous les Jeudi de 9h à 16h au [7 place des Enfants Nantais, 44000 Nantes](https://www.openstreetmap.org/node/1716156816)."
+  text = "<img width=200px src='/img/hypnocat.png'/><br /><br /><strike>Rendez-vous les Jeudi de 9h à 16h au [7 place des Enfants Nantais, 44000 Nantes](https://www.openstreetmap.org/node/1716156816)</strike>.<br />Plus de nouveaux clients dans l'immédiat."
   map_location = "Centre de bien-être de La pépinière"
 
 [feature_icons]
@@ -35,15 +31,6 @@
     title = "Indications"
     text = "Pour déterminer si c'est le bon outil pour votre demande."
     url = "/indications"
-
-  [[feature_icons.tile]]
-    #icon = "fa-comments"
-    icon = "fa-clock"
-    icon_pack = "fas"
-    accent = "5"
-    title = "Déroulement"
-    text = "Pour comprendre comment se déroulent les séances."
-    url = "/deroulement"
 
   [[feature_icons.tile]]
     icon = "fa-euro"
